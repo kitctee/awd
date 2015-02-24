@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+<!--    <link href="dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link href="dist/css/offcanvas.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+
+        <nav class="navbar navbar navbar-static-top">
+<!--        <nav class="navbar navbar-inverse navbar-static-top">-->
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Decker Library</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Library Staff Listing</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">News</li>
+                    <li><a href="#">Exhibition</a></li>
+                    <li><a href="#">Exhibition Policies</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Support the Library</a></li>					
+                  </ul>
+                </li>
+                <li><a href="#local-libraries">Local Libraries</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services &amp; Facilities <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Services &amp; Facilities</li>
+                    <li><a href="#">Computer Workstations</a></li>
+                    <li><a href="#">Copy-Print-Scan</a></li>
+                    <li><a href="#">Interlibrary Loan</a></li>
+                    <li><a href="#">Orientations</a></li>
+                    <li><a href="#">Research Advisor Program</a></li>
+                    <li><a href="#">Reserves</a></li>
+                    <li><a href="#">Screening Room</a></li>
+                    <li><a href="#">E-Books</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Policies &amp; Guidelines</li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Pre-College</a></li>
+                    <li><a href="#">Continuing Studies</a></li>
+                    <li><a href="#">Low Residency</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Baltimore Academic Libraries Consortium</a></li>
+                    <li><a href="#">Public</a></li>
+                    <li><a href="#">Computer</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Decker Library Catalog</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Special Collections</li>
+                    <li><a href="#">MICA Vertical File</a></li>
+                    <li><a href="#">MICA Masters Theses</a></li>
+                    <li><a href="#">MICA Archives</a></li>
+                    <li><a href="#">Masters Thesis Collection</a></li>
+                    <li><a href="#">Artist Files</a></li>
+                    <li><a href="#">A-Z Journal List</a></li>
+                    <li><a href="#">Text Finder</a></li>
+                    <li><a href="#">Book Arts Catalog</a></li>
+                    <li><a href="#">Journals, Sketchbooks &amp; Visual Diaries</a></li>
+                    <li><a href="#">Photograph Collections</a></li>
+                    <li><a href="#">Dover Series Index</a></li>
+                    <li><a href="#">Morris Louis Study Collection</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Research Databases</li>
+                    <li><a href="#">Research Guides</a></li>
+                    <li><a href="#">Reference Tools</a></li>
+                    <li><a href="#">Image Resources</a></li>
+                    <li><a href="#">Citation Guides</a></li>
+                    <li><a href="#">Databases List</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    </div>
+
+    
+    
+
+
+    <div class="container ">
+<!--      <div class="lead">Policies &amp; Guidelines</div>-->
+
+      <!-- START THE FEATURETTES -->
+
+
+      <hr class="featurette-divider">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+        <article class="col-xs-12 col-sm-8">
+          
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <h1 class="page-header">Policies &amp; Guidelines</h1>
+          <h5 class="text-muted">Use the navigation on the right to browse between sections</h5>
+          
+          
+          <div class="articleSection">
+            <h2 class="section-heading">General Library Circulation Guidelines</h2>
+  <!--          <p class="lead">Use the navigation on the right to browse between sections</p>-->
+            <ul>
+              <li class="h4 fontWeightLight">All patrons must present either a current MICA ID, a current BALC member institution ID or Decker Library alumni card in order to borrow materials.</li>
+              <li class="h4 fontWeightLight">Books are borrowed for a period of three weeks for students and staff, one semester for faculty.</li>
+              <li class="h4 fontWeightLight">DVDs are borrowed for a period of two days for students, two weeks for faculty and staff.</li>
+              <li class="h4 fontWeightLight">If an item that you need is on loan to another patron, you may ask Circulation staff to place it on hold, and notify you when it is returned.</li>
+              <li class="h4 fontWeightLight">Any item may be renewed if no other patron has placed a hold on it - see student guidelines for more information.</li>
+              <li class="h4 fontWeightLight">Overdue charges are $0.25 a day per book, $1.00 a day per DVD.</li>
+              <li class="h4 fontWeightLight">A book is considered lost if not returned within two months of the due date. A DVD is considered lost if not returned within two weeks of the due date. The borrower is then charged the item's full replacement cost along with a $25 processing fee per item.</li>
+              <li class="h4 fontWeightLight">Items can be returned after hours through the drop located at the main entrance of the Library on the first floor of the Bunting Center.</li>
+              <li class="h4 fontWeightLight">Users can view a list of their checked-out items -- and students may renew items twice -- using the Library Catalog by clicking on "My Account" and logging in with their MICA credentials.</li>
+              <li class="h4 fontWeightLight">You can also view your account using your mobile device! The free BookMyne app allows you to view your checked-out items, holds and fines, and allows students to renew items. Available in the App Store for Apple iOS and Google Play for Android.</li>
+            </ul>
+          </div>
+          
+          
+
+          <div class="articleSection">
+            <h2 class="section-heading">Policies</h2>
+            <p class="h4">Note: In accordance with mica’s policy regarding campus email, all electronic correspondence from the decker library will be sent to your mica.edu email address.</p>
+            <ul>
+              <li class="h4"><a href="">Albers iPad Loan Registration</a></li>
+              <li class="h4"><a href="">Course Evaluations &amp; Library Computers</a></li>
+              <li class="h4"><a href="">Digital Library</a></li>
+              <li class="h4"><a href="">Interlibrary Loan</a></li>
+              <li class="h4"><a href="">Library Exhibitions</a></li>
+              <li class="h4"><a href="">Scanning from Library Collection for Distance Students &amp; Faculty</a></li>
+            </ul>
+          </div>
+          
+          <div class="articleSection">
+            <h2 class="section-heading">Student User Guidelines</h2>
+            <h3>Circulation</h3>
+            <p class="h4 text-muted">Student borrowing privileges are subject to the following:</p>
+            <ul>
+              <li class="h4 fontWeightLight">Students must present a current MICA ID to borrow materials.</li>
+              <li class="h4 fontWeightLight">For books, the standard loan period is three weeks and materials can be renewed twice if there are no holds on the material.</li>
+              <li class="h4 fontWeightLight">For DVDs, the loan period is 2 days.</li>
+              <li class="h4 fontWeightLight">A student may borrow up to 30 books and 2 DVDS at one time.</li>
+              <li class="h4 fontWeightLight">If an item is checked out to another patron, a circulation staff member can place a hold on it and then notify the requesting patron once it has been returned.</li>
+              <li class="h4 fontWeightLight">Overdue charges are $0.25 a day per book, and $1.00 per DVD.</li>
+              <li class="h4 fontWeightLight">A book will be considered lost if not returned within two months of the due date. A DVD will be considered lost if not returned within two weeks of the due date. The borrower will then be charged the full replacement cost plus a $25.00 processing fee per item.</li>
+              <li class="h4 fontWeightLight">Materials can be dropped off after hours in the drop located directly next to the main entrance of the Library on the first floor of the Bunting Center.</li>
+              <li class="h4 fontWeightLight">Students can view a list of their checked-out items — and renew items — using the <a href="">Library Catalog</a> by clicking on "My Account". Items can be renewed just twice through the catalog; for further renewals, visit or call the Circulation Desk.</li>
+              <li class="h4 fontWeightLight">User can also view their Decker Library account using your mobile device! The free <b>BookMyne</b> app allows patrons to view their checked-out items, holds and fines, and also allows them to renew items. Available through the App Store for Apple iOS and Google Play for Android.</li>
+            </ul>
+
+
+
+
+            <h3>Catalog and Databases</h3>
+            <p class="h4 fontWeightLight">The Decker Library Catalog is available for searching the collection from any location, on- or off-campus. From off-campus you will be prompted to log in with your MICA user name and password (same as the My MICA Portal log-in). If you are logged in to the Library Catalog, you can then use Off-Campus links to research databases without a second log-in.</p>
+            <p class="h4 fontWeightLight">Research databases are available through this website from any computer on-campus.</p>
+            <p class="h4 fontWeightLight">For Remote Access to research databases, use the Off Campus links to any database on the Research Databases page. You will be prompted to log in with your MICA user name and password (same as My MICA Portal log-in). The log-in will take you directly to the selected database for searching. Once you have logged in for one database -- or to the Library Catalog -- you can proceed to a different database without a second log-in.</p>
+
+            <h3>Reserve</h3>
+            <p class="h4 fontWeightLight">Reserve items are kept at the Circulation Desk and can be checked out for a two-hour period. Reserve items are for in-library use only. Materials from the collection that are currently on Reserve will appear in the Library Catalog with a location of "Items on reserve at Circulation Desk."</p>
+
+            <h3>Copyright Policy</h3>
+            <p class="h4 fontWeightLight">In accordance with copyright law, MICA does not condone or facilitate reproduction of materials that violates Title 17 of the United States Code of Federal Regulations.</p>
+            <p class="h4 fontWeightLight">Display of the following notice is required by law:</p>
+            <p class="h4 fontWeightLight">The copyright law of the United States (Title 17, United States Code) governs the making of photocopies or other reproductions of copyrighted material. Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specific conditions is that the photocopy or reproduction is not to be "used for any purpose other than private study, scholarship, or research." If a user makes a request for, or later uses a photocopy or reproduction for purposes in excess of "fair use," that user may be liable for copyright infringement.</p>
+            <p class="h4 fontWeightLight">This institution reserves the right to refuse to accept a copying order if in its judgment, fulfillment of the order would involve violation of copyright law.</p>
+            <p class="h4 fontWeightLight">Video materials should not be reproduced for any reason and should not be used at any event where an admission fee is charged.</p>
+
+
+            <h3>Collection Recommendations</h3>
+            <p class="h4 fontWeightLight">The Decker Library invites suggestions for the purchase of new material. Use the Recommend to Order form here, also available via the Library Catalog.</p>
+
+            <h3>Requesting Digital Images</h3>
+            <p class="h4 fontWeightLight">If you need digital images for a class presentation that are not available through the catalog or on ARTstor, you may request them. Please allow at least two weeks for processing and longer for larger orders. The library only processes materials needed for classroom use. Please provide all source materials for the images that you require. Please contact our Media Coordinator, Art Soontornsaratool with any questions.</p>
+
+            <h3>Research Assistance</h3>
+            <p class="h4 fontWeightLight">Students are welcome to make an appointment for an individual meeting with a librarian for instruction in using library resources or to develop research strategies for academic projects. Such visits may be scheduled with the Reference Librarians by e-mailing refer@mica.edu or phoning (410) 225-2273.</p>
+
+            <h3>Interlibrary Loans</h3>
+            <p class="h4 fontWeightLight">If a book, article, film/video, or other item is not in the Decker Library, we can usually arrange to borrow a copy from elsewhere. The Interlibrary loan service is done online, with most materials available in 1-2 weeks. Occasionally, the lending library charges for the service. In this case, you will be notified of the charges before the book is ordered.</p>
+
+            <p class="h4 fontWeightLight">Interlibrary Loan requests can be made as follows:</p>
+            <ul>
+              <li class="h4 fontWeightLight">On-line with these request forms:
+                <ul>
+                  <li>Book Request</li>
+                  <li>Article Request</li>
+                </ul>
+              </li>
+              <li class="h4 fontWeightLight">The request forms are also available within the Library Catalog</li>
+              <li class="h4 fontWeightLight">By email to the Interlibrary Loan staff at ill@mica.edu</li>
+            </ul>
+            <p class="h4 fontWeightLight">Students will be notified via mica.edu email to pick up books or articles at the Circulation Desk once they are received, and are required to return items to a staff person at the Circulation Desk. Please do not use the book drop to return Interlibrary Loan materials.</p>
+
+            <h3>Library Facilities</h3>
+            <p class="h4 fontWeightLight">The Library has two main public areas. The first floor features the Circulation Desk, current periodicals, the sale shelf, new book displays, DVDs and flat exhibit cases. The lower level houses all other circulating library materials including Fiction, computer workstations, screening/study space, the standing exhibit case and the Reference Desk. An elevator is available for wheelchair access. Please ask a staff member for assistance with the elevator.</p>
+
+            <h3>Use of Other Libraries</h3>
+            <p class="h4 fontWeightLight">The Decker Library is a founding member of the Baltimore Academic Library Consortium. Membership in this group entitles all current faculty, staff and students to reciprocal borrowing privileges at the following institutions. Use the links below to search the libraries' catalogs prior to visiting.</p>
+            <ul>
+              <li class="h4 fontWeightLight">Baltimore Hebrew University - this collection is now part of the Towson University's Cook Library</li>
+              <li class="h4 fontWeightLight">Baltimore International College</li>
+              <li class="h4 fontWeightLight">Goucher College</li>
+              <li class="h4 fontWeightLight">Loyola/Notre Dame</li>
+              <li class="h4 fontWeightLight">Morgan State University</li>
+              <li class="h4 fontWeightLight">St. Mary's Seminary and University</li>
+              <li class="h4 fontWeightLight">Towson University</li>
+              <li class="h4 fontWeightLight">University of Baltimore - Langsdale Library only</li>
+              <li class="h4 fontWeightLight">University of Maryland, Baltimore County</li>
+              <li class="h4 fontWeightLight">Stevenson University</li>
+            </ul>
+            <p class="h4 fontWeightLight">Johns Hopkins University - Johns Hopkins University extends borrowing privileges to MICA faculty and graduate and post-bac students only. Interested MICA people must first visit the Decker Library Circulation desk to have a registration form completed by Circulation staff to take to the JHU Library. The privilege applies only to the Eisenhower Library on the Homewood Campus.</p>
+            <p class="h4 fontWeightLight">One can enter the Eisenhower Library by presenting a photo ID card between 8 a.m. and 8 p.m. After 8 p.m., one must show an academic ID (i.e., a MICA ID).</p>
+            <p class="h4 fontWeightLight">Computer use within seated computer labs at the Eisenhower Library is restricted to those with borrowing privileges and requires registration at their Circulation Desk between 8 a.m. and 8 p.m. Stand-up computers throughout the library are available for use by all visitors, and contain the same resources as the seated computers.</p>
+            <p class="h4 fontWeightLight italic">NOTE: JHU limits access to the library during their mid-term and final exam periods. This includes a "reading week" prior to their final exam week. During those times, visitors can only use the library from 8 a.m. to 4 p.m. During all other times, a valid JHU ID is required for entrance. See the JHU Academic Calendar.</p>
+
+            <h3>Contacting the Decker Library</h3>
+            <p class="h4 fontWeightLight">Circulation Desk: (410) 225-2272 / circ@mica.edu</p>
+            <p class="h4 fontWeightLight">Reference Desk: (410) 225-2273 / refer@mica.edu</p>
+          
+          </div>
+          
+          
+          
+          
+          
+          
+          
+        </article>
+      
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas col-md-offset-1" id="sidebar">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">General Guidelines</a>
+            <a href="#" class="list-group-item">Policies<span class="text-muted" style="float:right;">Expand</span>
+              <ul>
+                <li>dsds</li>
+                <li>dsds</li>
+                <li>dsds</li>
+                <li>dsds</li>
+                <li>dsds</li>
+              </ul>
+            </a>
+            <a href="#" class="list-group-item">Student</a>
+            <a href="#" class="list-group-item">Pre-College</a>
+            <a href="#" class="list-group-item">Continuing Studies</a>
+            <a href="#" class="list-group-item">Low Residency</a>
+            <a href="#" class="list-group-item">Faculty</a>
+            <a href="#" class="list-group-item">Staff</a>
+            <a href="#" class="list-group-item">Alumni</a>
+            <a href="#" class="list-group-item">Baltimore Libraries</a>
+            <a href="#" class="list-group-item">Public</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer class="pageFooter">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Maryland Institute College of Art &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/offcanvas.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

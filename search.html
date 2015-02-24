@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar-wrapper">
+
+<!--        <nav class="navbar navbar navbar-static-top">-->
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Decker Library</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="search.html">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Library Staff Listing</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">News</li>
+                    <li><a href="#">Exhibition</a></li>
+                    <li><a href="#">Exhibition Policies</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Support the Library</a></li>					
+                  </ul>
+                </li>
+                <li><a href="#local-libraries">Local Libraries</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Computer Workstations</a></li>
+                    <li><a href="#">Copy-Print-Scan</a></li>
+                    <li><a href="#">Interlibrary Loan</a></li>
+                    <li><a href="#">Orientations</a></li>
+                    <li><a href="#">Research Advisor Program</a></li>
+                    <li><a href="#">Reserves</a></li>
+                    <li><a href="#">Screening Room</a></li>
+                    <li><a href="#">E-Books</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Policies &amp; Guidelines <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Pre-College</a></li>
+                    <li><a href="#">Continuing Studies</a></li>
+                    <li><a href="#">Low Residency</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Baltimore Academic Libraries Consortium</a></li>
+                    <li><a href="#">Public</a></li>
+                    <li><a href="#">Computer</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Decker Library Catalog</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Special Collections</li>
+                    <li><a href="#">MICA Vertical File</a></li>
+                    <li><a href="#">MICA Masters Theses</a></li>
+                    <li><a href="#">MICA Archives</a></li>
+                    <li><a href="#">Masters Thesis Collection</a></li>
+                    <li><a href="#">Artist Files</a></li>
+                    <li><a href="#">A-Z Journal List</a></li>
+                    <li><a href="#">Text Finder</a></li>
+                    <li><a href="#">Book Arts Catalog</a></li>
+                    <li><a href="#">Journals, Sketchbooks &amp; Visual Diaries</a></li>
+                    <li><a href="#">Photograph Collections</a></li>
+                    <li><a href="#">Dover Series Index</a></li>
+                    <li><a href="#">Morris Louis Study Collection</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Research Databases</li>
+                    <li><a href="#">Research Guides</a></li>
+                    <li><a href="#">Reference Tools</a></li>
+                    <li><a href="#">Image Resources</a></li>
+                    <li><a href="#">Citation Guides</a></li>
+                    <li><a href="#">Databases List</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <form class="navbar-form">
+              <label for="search">Search</label>
+              <input type="text" class="form-control" id="search" placeholder="Search..." value="Graphic">
+            </form>
+            
+            
+            <li>
+              <h4>Did you mean</h4>
+              <form class="searchOption-form">
+                <label for="GraphicArts">Graphic arts <span class="quantity badge">319</span></label>
+                <label for="ComputerGraphics">Computer graphics <span class="quantity badge">290</span></label>
+                <label for="GraphicNovels">Graphic novels <span class="quantity badge">263</span></label>
+                <label for="GraphicDesignTypography">Graphic design (Typography) <span class="quantity badge">144</span></label>
+                <label for="CommercialArt">Commercial art <span class="quantity badge">140</span></label>
+                <p>
+                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                </p>
+              </form>
+            </li>
+
+<!--
+              <ul>
+                <li>Graphic arts <span class="quantity badge">319</span></li>
+                <li>Computer graphics <span class="quantity badge">290</span></li>
+                <li>Graphic novels <span class="quantity badge">263</span></li>
+                <li>Graphic design (Typography) <span class="quantity badge">144</span></li>
+                <li>Commercial art <span class="quantity badge">140</span></li>
+                <p>
+                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                </p>
+              </ul>
+-->
+
+            <li>
+              <h4>Format</h4>
+              <form class="searchOption-form">
+                <p>
+                  <button type="button" class="btn btn-xs btn-default">Include</button>
+                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
+                </p>
+                <input type="checkbox" id="Books">
+                <label for="Books"><span class="checkbox"></span>Books <span class="quantity badge">2596</span></label>
+                <input type="checkbox" id="Image">
+                <label for="Image"><span class="checkbox"></span>Image <span class="quantity badge">1502</span></label>
+                <input type="checkbox" id="E-Books">
+                <label for="E-Books"><span class="checkbox"></span>E-Books/Electronic Resources <span class="quantity badge">655</span></label>
+                <input type="checkbox" id="DVD">
+                <label for="DVD"><span class="checkbox"></span>DVD <span class="quantity badge">77</span></label>
+                <input type="checkbox" id="Periodicals">
+                <label for="Periodicals"><span class="checkbox"></span>Periodicals <span class="quantity badge">63</span></label>
+                <p>
+                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                </p>
+              </form>
+            </li>
+            
+            <li>
+              <h4>Publication Date</h4>
+              <form class="searchOption-form">
+                <p>
+                  <button type="button" class="btn btn-xs btn-default">Include</button>
+                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
+                </p>
+                <input type="checkbox" id="2015">
+                <label for="2015"><span class="checkbox"></span>2015 <span class="quantity badge">332</span></label>
+                <input type="checkbox" id="2014">
+                <label for="2014"><span class="checkbox"></span>2014 <span class="quantity badge">283</span></label>
+                <input type="checkbox" id="2013">
+                <label for="2013"><span class="checkbox"></span>2013 <span class="quantity badge">203</span></label>
+                <input type="checkbox" id="2012">
+                <label for="2012"><span class="checkbox"></span>2012 <span class="quantity badge">199</span></label>
+                <input type="checkbox" id="2011">
+                <label for="2011"><span class="checkbox"></span>2011 <span class="quantity badge">185</span></label>
+                <p>
+                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                </p>
+              </form>
+            </li>            
+            
+            <li>
+              <h4>Language</h4>
+              <form class="searchOption-form">
+                <p>
+                  <button type="button" class="btn btn-xs btn-default">Include</button>
+                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
+                </p>
+                <input type="checkbox" id="English">
+                <label for="English"><span class="checkbox"></span>English <span class="quantity badge">3310</span></label>
+                <input type="checkbox" id="German">
+                <label for="German"><span class="checkbox"></span>German <span class="quantity badge">151</span></label>
+                <input type="checkbox" id="French">
+                <label for="French"><span class="checkbox"></span>French <span class="quantity badge">109</span></label>
+                <input type="checkbox" id="Japanese">
+                <label for="Japanese"><span class="checkbox"></span>Japanese <span class="quantity badge">25</span></label>
+                <input type="checkbox" id="Spanish">
+                <label for="Spanish"><span class="checkbox"></span>2011 <span class="quantity badge">14</span></label>
+                <p>
+                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                </p>
+              </form>
+            </li>
+            
+            <li>
+              <h4>Author</h4>
+              <form class="searchOption-form">
+                <p>
+                  <button type="button" class="btn btn-xs btn-default">Include</button>
+                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
+                </p>
+                <input type="checkbox" id="HellerSteven">
+                <label for="HellerSteven"><span class="checkbox"></span>Heller, Steven <span class="quantity badge">40</span></label>
+                <input type="checkbox" id="RodchenkoAleksandr">
+                <label for="RodchenkoAleksandr"><span class="checkbox"></span>Rodchenko, Aleksandr <span class="quantity badge">37</span></label>
+                <input type="checkbox" id="McManusGeorge">
+                <label for="McManusGeorge"><span class="checkbox"></span>McManus, George <span class="quantity badge">35</span></label>
+                <input type="checkbox" id="GlaserMilton">
+                <label for="GlaserMilton"><span class="checkbox"></span>Glaser, Milton <span class="quantity badge">34</span></label>
+                <input type="checkbox" id="Erte">
+                <label for="Erte"><span class="checkbox"></span>Erte <span class="quantity badge">29</span></label>
+                <p>
+                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                </p>
+              </form>
+            </li>
+
+            <li>
+              <h4>Vender</h4>
+              <form class="searchOption-form">
+                <p>
+                  <button type="button" class="btn btn-xs btn-default">Include</button>
+                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
+                </p>
+                <input type="checkbox" id="Amazon">
+                <label for="Amazon"><span class="checkbox"></span>Amazon <span class="quantity badge">3310</span></label>
+                <input type="checkbox" id="Gift">
+                <label for="Gift"><span class="checkbox"></span>Gift <span class="quantity badge">151</span></label>
+                <input type="checkbox" id="Hachette">
+                <label for="Hachette"><span class="checkbox"></span>Hachette <span class="quantity badge">109</span></label>
+                <input type="checkbox" id="Ingram">
+                <label for="Ingram"><span class="checkbox"></span>Ingram <span class="quantity badge">25</span></label>
+                <input type="checkbox" id="Other">
+                <label for="Other"><span class="checkbox"></span>Other <span class="quantity badge">14</span></label>
+                <p>
+                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                </p>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Showing result for: Graphic</h1>
+<!--          <h2 class="sub-header">141 Results Found</h2>          -->
+
+        </div>
+        <div class="table-responsive col-md-offset-2" style="clear:both;">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publication</th>
+                <th>Copies Available</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4,934</td>
+                <td>4,024</td>
+                <td>1,989</td>
+                <td>4,092</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="resultTable col-md-offset-2">
+          <div class="resultCell">
+            <div class="imgBox"><img src="img/Kandinsky.jpeg"></div>
+            <div class="description">
+              <p><span class="h6 caption">Title</span><span class="dpt-text">Kandinsky (Milwaukee Art Museum)</span><span class="badge">NEW</span></p>
+              <p><span class="h6 caption">Author</span><span class="dpt-text">-</span></p>
+              <p><span class="h6 caption">Call Number</span><span class="dpt-text">N6999 .K33 A4 2014   Book in Quarto area</span></p>
+              <p><span class="h6 caption">Publication</span><span class="dpt-text">PARIS : CENTRE POMPIDOU ; MILWAUKEE, WISC. : MILWAUKEE ART MUSEUM, [2014] NEW HAVEN : YALE UNIVERSITY PRESS ©2014</span></p>
+              <p><span class="h6 caption">Copies Available</span><span class="dpt-text">1</span></p>
+              <p><span class="h6 caption">Available in Reserves</span><span class="dpt-text">0</span></p>
+            </div>
+            <p class="actionBtnCon">
+              <button type="button" class="btn btn-xs btn-default">Text this to me</button>
+              <button type="button" class="btn btn-xs btn-default">Buy it now</button>
+              <button type="button" class="btn btn-xs btn-default">Cite this</button>
+            </p>
+          </div>
+
+
+
+          <div class="resultCell">
+            <div class="imgBox"><img src="img/Culture.jpeg"></div>
+            <div class="description">
+              <p><span class="h6 caption">Title</span><span class="dpt-text">Kandinsky (Milwaukee Art Museum)</span></p>
+              <p><span class="h6 caption">Author</span><span class="dpt-text">-</span></p>
+              <p><span class="h6 caption">Call Number</span><span class="dpt-text">N6999 .K33 A4 2014   Book in Quarto area</span></p>
+              <p><span class="h6 caption">Publication</span><span class="dpt-text">PARIS : CENTRE POMPIDOU ; MILWAUKEE, WISC. : MILWAUKEE ART MUSEUM, [2014] NEW HAVEN : YALE UNIVERSITY PRESS ©2014</span></p>
+              <p><span class="h6 caption">Copies Available</span><span class="dpt-text">1</span></p>
+              <p><span class="h6 caption">Available in Reserves</span><span class="dpt-text">0</span></p>
+            </div>
+            <p class="actionBtnCon">
+              <button type="button" class="btn btn-xs btn-default">Text this to me</button>
+              <button type="button" class="btn btn-xs btn-default">Buy it now</button>
+              <button type="button" class="btn btn-xs btn-default">Cite this</button>
+            </p>
+          </div>            
+
+          <div class="resultCell">
+            <div class="imgBox"><img src="img/Korra.jpeg"></div>
+            <div class="description">
+              <p><span class="h6 caption">Title</span><span class="dpt-text">Kandinsky (Milwaukee Art Museum)</span></p>
+              <p><span class="h6 caption">Author</span><span class="dpt-text">-</span></p>
+              <p><span class="h6 caption">Call Number</span><span class="dpt-text">N6999 .K33 A4 2014   Book in Quarto area</span></p>
+              <p><span class="h6 caption">Publication</span><span class="dpt-text">PARIS : CENTRE POMPIDOU ; MILWAUKEE, WISC. : MILWAUKEE ART MUSEUM, [2014] NEW HAVEN : YALE UNIVERSITY PRESS ©2014</span></p>
+              <p><span class="h6 caption">Copies Available</span><span class="dpt-text">1</span></p>
+              <p><span class="h6 caption">Available in Reserves</span><span class="dpt-text">0</span></p>
+            </div>
+            <p class="actionBtnCon">
+              <button type="button" class="btn btn-xs btn-default">Text this to me</button>
+              <button type="button" class="btn btn-xs btn-default">Buy it now</button>
+              <button type="button" class="btn btn-xs btn-default">Cite this</button>
+            </p>
+          </div>            
+
+          <div class="resultCell">
+            <div class="imgBox"><img src="img/Medieval.jpeg"></div>
+            <div class="description">
+              <p><span class="h6 caption">Title</span><span class="dpt-text">Kandinsky (Milwaukee Art Museum)</span></p>
+              <p><span class="h6 caption">Author</span><span class="dpt-text">-</span></p>
+              <p><span class="h6 caption">Call Number</span><span class="dpt-text">N6999 .K33 A4 2014   Book in Quarto area</span></p>
+              <p><span class="h6 caption">Publication</span><span class="dpt-text">PARIS : CENTRE POMPIDOU ; MILWAUKEE, WISC. : MILWAUKEE ART MUSEUM, [2014] NEW HAVEN : YALE UNIVERSITY PRESS ©2014</span></p>
+              <p><span class="h6 caption">Copies Available</span><span class="dpt-text">1</span></p>
+              <p><span class="h6 caption">Available in Reserves</span><span class="dpt-text">0</span></p>
+            </div>
+            <p class="actionBtnCon">
+              <button type="button" class="btn btn-xs btn-default">Text this to me</button>
+              <button type="button" class="btn btn-xs btn-default">Buy it now</button>
+              <button type="button" class="btn btn-xs btn-default">Cite this</button>
+            </p>
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

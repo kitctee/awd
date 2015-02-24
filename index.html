@@ -1,9 +1,312 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>awd</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+<!--    <link href="dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
   </head>
+<!-- NAVBAR
+================================================== -->
   <body>
-    <h1>Hello world</h1>
+    <div class="navbar-wrapper">
+
+        <nav class="navbar navbar navbar-static-top">
+<!--        <nav class="navbar navbar-inverse navbar-static-top">-->
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Decker Library</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="search.html">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Library Staff Listing</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">News</li>
+                    <li><a href="#">Exhibition</a></li>
+                    <li><a href="#">Exhibition Policies</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Support the Library</a></li>					
+                  </ul>
+                </li>
+                <li><a href="#local-libraries">Local Libraries</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services &amp; Facilities <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Services &amp; Facilities</li>
+                    <li><a href="#">Computer Workstations</a></li>
+                    <li><a href="#">Copy-Print-Scan</a></li>
+                    <li><a href="#">Interlibrary Loan</a></li>
+                    <li><a href="#">Orientations</a></li>
+                    <li><a href="#">Research Advisor Program</a></li>
+                    <li><a href="#">Reserves</a></li>
+                    <li><a href="#">Screening Room</a></li>
+                    <li><a href="#">E-Books</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Policies &amp; Guidelines</li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Pre-College</a></li>
+                    <li><a href="#">Continuing Studies</a></li>
+                    <li><a href="#">Low Residency</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Baltimore Academic Libraries Consortium</a></li>
+                    <li><a href="#">Public</a></li>
+                    <li><a href="#">Computer</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Decker Library Catalog</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Special Collections</li>
+                    <li><a href="#">MICA Vertical File</a></li>
+                    <li><a href="#">MICA Masters Theses</a></li>
+                    <li><a href="#">MICA Archives</a></li>
+                    <li><a href="#">Masters Thesis Collection</a></li>
+                    <li><a href="#">Artist Files</a></li>
+                    <li><a href="#">A-Z Journal List</a></li>
+                    <li><a href="#">Text Finder</a></li>
+                    <li><a href="#">Book Arts Catalog</a></li>
+                    <li><a href="#">Journals, Sketchbooks &amp; Visual Diaries</a></li>
+                    <li><a href="#">Photograph Collections</a></li>
+                    <li><a href="#">Dover Series Index</a></li>
+                    <li><a href="#">Morris Louis Study Collection</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Research Databases</li>
+                    <li><a href="#">Research Guides</a></li>
+                    <li><a href="#">Reference Tools</a></li>
+                    <li><a href="#">Image Resources</a></li>
+                    <li><a href="#">Citation Guides</a></li>
+                    <li><a href="#">Databases List</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    </div>
+
+
+    <!-- Landing page search
+    ================================================== -->
+    <div class="landingSearch">
+      <div class="bgBlur"></div>
+      <div class="container">
+        <!-- Search form -->
+        <div class="landingLogo"></div>
+        <form class="form-search col-md-8">
+          <ul class="nav nav-tabs cell" role="tablist">
+            <li role="presentation" class="active"><a href="#">Everything</a></li>
+            <li role="presentation"><a href="#">Book</a></li>
+            <li role="presentation"><a href="#">E-Book</a></li>
+            <li role="presentation"><a href="#">DVD</a></li>
+            <li role="presentation"><a href="#">Periodical</a></li>
+          </ul>
+          <div class="searchBar">
+            <label for="inputSearch" class="sr-only">Search</label>
+            <ul class="nav search-filter">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">All Fields <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="active"><a href="#">All Fields</a></li>
+                  <li><a href="#">Title</a></li>
+                  <li><a href="#">Author(s)</a></li>
+                  <li><a href="#">Subject</a></li>
+                  <li><a href="#">ISBN</a></li>
+                  <li><a href="#">Keywords</a></li>
+                </ul>
+              </li>
+            </ul>
+            <input type="search" id="inputEmail" class="form-control masSearch" placeholder="Search" required>
+            <button class="btn btn-lg btn-primary btn-block masSearchBtn" type="submit">Search</button>
+            </div>
+        </form>
+        <footer class="col-md-8">
+          <div class="col-md-4">
+            <h6 class="small">Semester hours</h6>
+            <h5>Mon-Thu 8:30am-9pm</h5>
+            <h5>Fri 8:30am-4:30pm</h5>
+            <h5>Sat-Sun 12-6pm</h5>
+          </div>
+          <div class="col-md-4">
+            <h6 class="small">Quick Links</h6>
+            <h5>Interlibrary Loan</h5>
+            <h5>Recommend to Purchase</h5>
+            <h5>Reserves</h5>
+            <h5>Citation Help</h5>
+          </div>
+          <div class="col-md-4">
+            <h6 class="small">Contact Us</h6>
+            <h5 class="small">Circulation Desk:</h5>
+            <h5>410.225.2272 circ@mica.edu</h5>
+            <h5 class="small">Reference Desk:</h5>
+            <h5>410.225.2273 refer@mica.edu</h5>
+          </div>
+        </footer>
+      </div>
+    </div><!-- /.landingSearch -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container newArrivals">
+      <div class="lead">New Arrivals</div>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="newArrivalsCell">
+          <img class="img-thumbnail" src="img/Kandinsky.jpeg" alt="Generic placeholder image">
+          <h5>Kandinsky (Milwaukee Art Museum)</h5>
+          <h5 class="small author">Lampe, Angela</h5>
+          <h6 class="small">2014</h6>
+          <h6 class="small">ISBN: 9780300206630</h6>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.newArrivalsCell -->
+        <div class="newArrivalsCell">
+          <img class="img-thumbnail" src="img/Medieval.jpeg" alt="Generic placeholder image">
+          <h5>From minor to major : the minor arts in Medieval art history</h5>
+          <h5 class="small author">Hourihane, Colum, 1955–</h5>
+          <h6 class="small">2012</h6>
+          <h6 class="small">ISBN: 9780983753711</h6>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.newArrivalsCell -->
+        <div class="newArrivalsCell">
+          <img class="img-thumbnail" src="img/Mountain.jpeg" alt="Generic placeholder image">
+          <h5>Black Mountain College</h5>
+          <h5 class="small author">Smith, Anne E. Chesky</h5>
+          <h6 class="small">2014</h6>
+          <h6 class="small">ISBN: 9781467122351</h6>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.newArrivalsCell -->
+        <div class="newArrivalsCell">
+          <img class="img-thumbnail" src="img/Culture.jpeg" alt="Generic placeholder image">
+          <h5>Culture class</h5>
+          <h5 class="small author">Rosler, Martha</h5>
+          <h6 class="small">2013</h6>
+          <h6 class="small">ISBN: 9781934105818</h6>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.newArrivalsCell -->
+        <div class="newArrivalsCell">
+          <img class="img-thumbnail" src="img/Korra.jpeg" alt="Generic placeholder image">
+          <h5>The legend of Korra : the art of the animated series. Book Three, Change</h5>
+          <h5 class="small author">DiMartino, Michael Dante</h5>
+          <h6 class="small">2015</h6>
+          <h6 class="small">ISBN: 9781616555658</h6>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.newArrivalsCell -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    
+    
+    
+    
+    <div class="container ">
+      <div class="lead">New From the Library</div>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h5>Feb 03, 15</h5>
+          <h2 class="featurette-heading">A History of Ink <span class="text-muted">Tattoos are not simply for sailors.</span></h2>
+          <h4>by <span class="author"><a href="#">Allison Fischbach</a></span></h4>
+          <p class="lead">Modern tattoo art is growing in popularity with the widespread availability of sanitary professional tattoo parlors. Chances are you, or someone you know, has some ink — a 2008 study by the Pew Research Center concludes that one in three adults between the ages of 18 and 25 has a tattoo.</p>
+          <p><a class="btn btn-default" href="#" role="button">Read More &raquo;</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/news_1.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/news_2.jpg" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h5>Jan 06, 15</h5>
+          <h2 class="featurette-heading">Jonathan Williams at MICA and at Large</h2>
+          <h4>by <span class="author"><a href="#">Kathy Cowan '81</a></span></h4>
+          <p class="lead">Jonathan Williams (1929-2008) was a poet, publisher, and documentarian of sights, sites, and language wherever he traveled, and especially in the Appalachian region of the United States, where he lived. He studied at the Black Mountain College, and lived as an adult near Highlands, North Carolina, and in England.</p>
+          <p><a class="btn btn-default" href="#" role="button">Read More &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one</h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Maryland Institute College of Art &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
