@@ -128,50 +128,29 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <form class="navbar-form">
+            <h4>Search</h4>
+            <input type="text" class="form-control" id="search" placeholder="Search..." value="Graphic">
+          </form>
           <ul class="nav nav-sidebar">
-            <form class="navbar-form">
-              <label for="search">Search</label>
-              <input type="text" class="form-control" id="search" placeholder="Search..." value="Graphic">
-            </form>
-            
-            
             <li>
-              <h4>Did you mean</h4>
+              <h4>Do you mean</h4>
               <form class="searchOption-form">
                 <label for="GraphicArts">Graphic arts <span class="quantity badge">319</span></label>
                 <label for="ComputerGraphics">Computer graphics <span class="quantity badge">290</span></label>
                 <label for="GraphicNovels">Graphic novels <span class="quantity badge">263</span></label>
                 <label for="GraphicDesignTypography">Graphic design (Typography) <span class="quantity badge">144</span></label>
                 <label for="CommercialArt">Commercial art <span class="quantity badge">140</span></label>
-                <p>
-                  <button type="button" class="btn btn-xs btn-link">Show More</button>
-                  <button type="button" class="btn btn-xs btn-link">View All</button>
-                </p>
+                <div class="searchOptionInExBtn">
+                  <button type="button" class="btn btn-xs btn-link" data-toggle="modal" data-target="#sidebarModal">View All</button>
+                </div>
               </form>
             </li>
-
-<!--
-              <ul>
-                <li>Graphic arts <span class="quantity badge">319</span></li>
-                <li>Computer graphics <span class="quantity badge">290</span></li>
-                <li>Graphic novels <span class="quantity badge">263</span></li>
-                <li>Graphic design (Typography) <span class="quantity badge">144</span></li>
-                <li>Commercial art <span class="quantity badge">140</span></li>
-                <p>
-                  <button type="button" class="btn btn-xs btn-link">Show More</button>
-                  <button type="button" class="btn btn-xs btn-link">View All</button>
-                </p>
-              </ul>
--->
 
             <li>
               <h4>Format</h4>
               <form class="searchOption-form">
-                <p>
-                  <button type="button" class="btn btn-xs btn-default">Include</button>
-                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
-                </p>
                 <input type="checkbox" id="Books">
                 <label for="Books"><span class="checkbox"></span>Books <span class="quantity badge">2596</span></label>
                 <input type="checkbox" id="Image">
@@ -182,20 +161,18 @@
                 <label for="DVD"><span class="checkbox"></span>DVD <span class="quantity badge">77</span></label>
                 <input type="checkbox" id="Periodicals">
                 <label for="Periodicals"><span class="checkbox"></span>Periodicals <span class="quantity badge">63</span></label>
-                <p>
-                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                <div class="searchOptionInExBtn">
+                  <button type="button" class="btn btn-xs btn-link">More</button>
                   <button type="button" class="btn btn-xs btn-link">View All</button>
-                </p>
+                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
+                  <button type="button" class="btn btn-xs btn-default">Include</button>
+                </div>
               </form>
             </li>
             
             <li>
               <h4>Publication Date</h4>
               <form class="searchOption-form">
-                <p>
-                  <button type="button" class="btn btn-xs btn-default">Include</button>
-                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
-                </p>
                 <input type="checkbox" id="2015">
                 <label for="2015"><span class="checkbox"></span>2015 <span class="quantity badge">332</span></label>
                 <input type="checkbox" id="2014">
@@ -206,20 +183,18 @@
                 <label for="2012"><span class="checkbox"></span>2012 <span class="quantity badge">199</span></label>
                 <input type="checkbox" id="2011">
                 <label for="2011"><span class="checkbox"></span>2011 <span class="quantity badge">185</span></label>
-                <p>
-                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                <div class="searchOptionInExBtn">
+                  <button type="button" class="btn btn-xs btn-link">More</button>
                   <button type="button" class="btn btn-xs btn-link">View All</button>
-                </p>
+                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
+                  <button type="button" class="btn btn-xs btn-default">Include</button>
+                </div>
               </form>
             </li>            
             
             <li>
               <h4>Language</h4>
               <form class="searchOption-form">
-                <p>
-                  <button type="button" class="btn btn-xs btn-default">Include</button>
-                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
-                </p>
                 <input type="checkbox" id="English">
                 <label for="English"><span class="checkbox"></span>English <span class="quantity badge">3310</span></label>
                 <input type="checkbox" id="German">
@@ -229,21 +204,19 @@
                 <input type="checkbox" id="Japanese">
                 <label for="Japanese"><span class="checkbox"></span>Japanese <span class="quantity badge">25</span></label>
                 <input type="checkbox" id="Spanish">
-                <label for="Spanish"><span class="checkbox"></span>2011 <span class="quantity badge">14</span></label>
-                <p>
-                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                <label for="Spanish"><span class="checkbox"></span>Korean <span class="quantity badge">14</span></label>
+                <div class="searchOptionInExBtn">
+                  <button type="button" class="btn btn-xs btn-link">More</button>
                   <button type="button" class="btn btn-xs btn-link">View All</button>
-                </p>
+                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
+                  <button type="button" class="btn btn-xs btn-default">Include</button>
+                </div>
               </form>
             </li>
             
             <li>
               <h4>Author</h4>
               <form class="searchOption-form">
-                <p>
-                  <button type="button" class="btn btn-xs btn-default">Include</button>
-                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
-                </p>
                 <input type="checkbox" id="HellerSteven">
                 <label for="HellerSteven"><span class="checkbox"></span>Heller, Steven <span class="quantity badge">40</span></label>
                 <input type="checkbox" id="RodchenkoAleksandr">
@@ -254,20 +227,18 @@
                 <label for="GlaserMilton"><span class="checkbox"></span>Glaser, Milton <span class="quantity badge">34</span></label>
                 <input type="checkbox" id="Erte">
                 <label for="Erte"><span class="checkbox"></span>Erte <span class="quantity badge">29</span></label>
-                <p>
-                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                <div class="searchOptionInExBtn">
+                  <button type="button" class="btn btn-xs btn-link">More</button>
                   <button type="button" class="btn btn-xs btn-link">View All</button>
-                </p>
+                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
+                  <button type="button" class="btn btn-xs btn-default">Include</button>
+                </div>
               </form>
             </li>
 
             <li>
               <h4>Vender</h4>
               <form class="searchOption-form">
-                <p>
-                  <button type="button" class="btn btn-xs btn-default">Include</button>
-                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
-                </p>
                 <input type="checkbox" id="Amazon">
                 <label for="Amazon"><span class="checkbox"></span>Amazon <span class="quantity badge">3310</span></label>
                 <input type="checkbox" id="Gift">
@@ -278,40 +249,67 @@
                 <label for="Ingram"><span class="checkbox"></span>Ingram <span class="quantity badge">25</span></label>
                 <input type="checkbox" id="Other">
                 <label for="Other"><span class="checkbox"></span>Other <span class="quantity badge">14</span></label>
-                <p>
-                  <button type="button" class="btn btn-xs btn-link">Show More</button>
+                <div class="searchOptionInExBtn">
+                  <button type="button" class="btn btn-xs btn-link">More</button>
                   <button type="button" class="btn btn-xs btn-link">View All</button>
-                </p>
+                  <button type="button" class="btn btn-xs btn-default">Exclude</button>
+                  <button type="button" class="btn btn-xs btn-default">Include</button>
+                </div>
               </form>
             </li>
           </ul>
         </div>
-        <div class="col-md-10 col-md-offset-2 main">
+        
+<!-- Modal -->
+<div class="modal fade" id="sidebarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Format</h4>
+      </div>
+      <div class="modal-nav">
+        <h4>Sort</h4>
+        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Alphabetical</button>
+        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Relevance</button>
+      </div>
+      <div class="modal-body">
+        <form class="searchOption-viewAll">
+          <input type="checkbox" id="BooksA">
+          <label for="BooksA"><span class="checkbox"></span>Books <span class="quantity badge">2596</span></label>
+          <input type="checkbox" id="ImageA">
+          <label for="ImageA"><span class="checkbox"></span>Image <span class="quantity badge">1502</span></label>
+          <input type="checkbox" id="E-BooksA">
+          <label for="E-BooksA"><span class="checkbox"></span>E-Books/Electronic Resources <span class="quantity badge">655</span></label>
+          <input type="checkbox" id="DVDA">
+          <label for="DVDA"><span class="checkbox"></span>DVD <span class="quantity badge">77</span></label>
+          <input type="checkbox" id="PeriodicalsA">
+          <label for="PeriodicalsA"><span class="checkbox"></span>Periodicals <span class="quantity badge">63</span></label>
+          <input type="checkbox" id="VHSTapeA">
+          <label for="VHSTapeA"><span class="checkbox"></span>VHS tape <span class="quantity badge">3</span></label>
+          <input type="checkbox" id="NonProjectedGraphicA">
+          <label for="NonProjectedGraphicA"><span class="checkbox"></span>Non projected graphic <span class="quantity badge">1</span></label>
+          <input type="checkbox" id="OtherA">
+          <label for="OtherA"><span class="checkbox"></span>Other <span class="quantity badge">1</span></label>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-xs btn-link">Check All</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <div class="col-md-9 col-md-offset-3 main">
           <h1 class="page-header">Showing result for: Graphic</h1>
 <!--          <h2 class="sub-header">141 Results Found</h2>          -->
-
         </div>
-        <div class="table-responsive col-md-offset-2" style="clear:both;">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Publication</th>
-                <th>Copies Available</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>4,934</td>
-                <td>4,024</td>
-                <td>1,989</td>
-                <td>4,092</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="table-responsive col-md-offset-3" style="clear:both;">
+          <div class="container-fluid" style="background-color:#fafafa;">4933 Results Found Sort</div>
         </div>
-        <div class="resultTable col-md-offset-2">
+        <div class="resultTable col-md-offset-3">
           <div class="resultCell">
             <div class="imgBox"><img src="img/Kandinsky.jpeg"></div>
             <div class="description">
