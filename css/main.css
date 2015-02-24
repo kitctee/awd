@@ -25,9 +25,11 @@ body {
 */
   text-rendering: optimizeLegibility;
   /*  font-family: 'Giza' !important;*/
+-webkit-font-smoothing: subpixel-antialiased
 }
 p {
 /*  font-family: 'Garamond' !important;*/
+
 }
 
 
@@ -179,9 +181,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94faff', end
 .landingSearch footer > div + * {
   border-left: 1px solid #ddd;
 }
-
-
-
 
 .newArrivals {
   padding: 20px 15px;
