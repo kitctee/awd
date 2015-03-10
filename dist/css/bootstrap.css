@@ -1068,9 +1068,13 @@ th {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+
+/*>>>*/
+
+
 html {
   font-size: 10px;
-
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
@@ -1102,9 +1106,9 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+/*  outline: thin dotted;*/
+/*  outline: 5px auto -webkit-focus-ring-color;*/
+/*  outline-offset: -2px;*/
 }
 figure {
   margin: 0;
@@ -2522,9 +2526,11 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
+/*
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+*/
 }
 output {
   display: block;
@@ -2552,10 +2558,10 @@ output {
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #fbae17;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
 .form-control::-moz-placeholder {
   color: #999;
@@ -2997,9 +3003,11 @@ select[multiple].form-group-lg .form-control {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
+/*
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+*/
 }
 .btn:hover,
 .btn:focus,
@@ -3302,9 +3310,11 @@ fieldset[disabled] .btn-danger.active {
   background-color: #fff;
 }
 .btn-link {
-  font-weight: normal;
+/*  font-weight: normal;*/
+  font-weight: bold;
 /*  color: #337ab7;*/
   color: #fbae17;
+/*  color: #dd9403;*/
   border-radius: 0;
 }
 .btn-link,
@@ -4106,7 +4116,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 50px;
 /*  margin-bottom: 20px; kit*/
-  border: 1px solid transparent;
+  border: 1px solid #eee;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4240,7 +4250,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
-  border: 1px solid transparent;
+  border: 1px solid #eee;
   border-radius: 4px;
 }
 .navbar-toggle:focus {
@@ -4251,6 +4261,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 22px;
   height: 2px;
   border-radius: 1px;
+  background-color: #aaa;
+/*  background-color: #aaa;*/
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
@@ -4665,7 +4677,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-left: -1px;
   line-height: 1.42857143;
 /*  color: #337ab7;*/
-  color: #fbae17;
+  color: inherit;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -4686,9 +4698,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
 /*  color: #23527c;*/
-  color: #dd9403;
+/*  color: #dd9403;*/
   background-color: #eee;
-  border-color: #ddd;
+/*  border-color: #ddd;*/
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -5806,18 +5818,20 @@ button.close {
   position: relative;
   width: auto;
   margin: 10px;
+  max-height: 90%;
+  overflow-y: scroll;
+  outline: 0;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
 .modal-content {
   position: relative;
   background-color: #fff;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
-  outline: 0;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+/*  -webkit-background-clip: padding-box;*/
+/*          background-clip: padding-box;*/
 }
 .modal-backdrop {
   position: absolute;

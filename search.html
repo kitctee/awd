@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>MICA Decker Library | Search Research</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
@@ -16,6 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/search.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -127,26 +128,47 @@
 
 
     <div class="container-fluid">
+<!--    <div class="container">-->
       <div class="row">
-        <div class="col-sm-4 col-md-3 sidebar">
+        <div class="sidebar">
           <form class="navbar-form">
-            <h4>Search</h4>
-            <input type="text" class="form-control" id="search" placeholder="Search..." value="Graphic">
+            <h3>Showing result for</h3>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for..."  value="Graphic">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Search</button>
+              </span>
+            </div><!-- /input-group -->
           </form>
           <ul class="nav nav-sidebar">
             <li>
               <h4>Do you mean</h4>
               <form class="searchOption-form">
-                <label for="GraphicArts">Graphic arts <span class="quantity badge">319</span></label>
-                <label for="ComputerGraphics">Computer graphics <span class="quantity badge">290</span></label>
-                <label for="GraphicNovels">Graphic novels <span class="quantity badge">263</span></label>
-                <label for="GraphicDesignTypography">Graphic design (Typography) <span class="quantity badge">144</span></label>
-                <label for="CommercialArt">Commercial art <span class="quantity badge">140</span></label>
+                <label for="GraphicArts">Graphic arts &raquo;<span class="quantity badge">319</span></label>
+                <label for="ComputerGraphics">Computer graphics &raquo;<span class="quantity badge">290</span></label>
+                <label for="GraphicNovels">Graphic novels &raquo;<span class="quantity badge">263</span></label>
+                <label for="GraphicDesignTypography">Graphic design (Typography)  &raquo;<span class="quantity badge">144</span></label>
+                <label for="CommercialArt">Commercial art &raquo;<span class="quantity badge">140</span></label>
                 <div class="searchOptionInExBtn">
                   <button type="button" class="btn btn-xs btn-link" data-toggle="modal" data-target="#sidebarModal">View All</button>
                 </div>
               </form>
             </li>
+            
+            <li>
+              <h4>Sort by</h4>
+              <div class="sortByCon">
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                <select class="sortBy">
+                  <option class="active">Relevance</option>
+                  <option>Publication Date (Ascending)</option>
+                  <option>Publication Date (Descending)</option>
+                  <option>Title</option>
+                  <option>Author</option>
+                </select>
+              </div>
+            </li>
+
 
             <li>
               <h4>Format</h4>
@@ -163,7 +185,7 @@
                 <label for="Periodicals"><span class="checkbox"></span>Periodicals <span class="quantity badge">63</span></label>
                 <div class="searchOptionInExBtn">
                   <button type="button" class="btn btn-xs btn-link">More</button>
-                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                  <button type="button" class="btn btn-xs btn-link" data-toggle="modal" data-target="#sidebarModal">View All</button>
                   <button type="button" class="btn btn-xs btn-default">Exclude</button>
                   <button type="button" class="btn btn-xs btn-default">Include</button>
                 </div>
@@ -185,7 +207,7 @@
                 <label for="2011"><span class="checkbox"></span>2011 <span class="quantity badge">185</span></label>
                 <div class="searchOptionInExBtn">
                   <button type="button" class="btn btn-xs btn-link">More</button>
-                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                  <button type="button" class="btn btn-xs btn-link" data-toggle="modal" data-target="#sidebarModal">View All</button>
                   <button type="button" class="btn btn-xs btn-default">Exclude</button>
                   <button type="button" class="btn btn-xs btn-default">Include</button>
                 </div>
@@ -207,7 +229,7 @@
                 <label for="Spanish"><span class="checkbox"></span>Korean <span class="quantity badge">14</span></label>
                 <div class="searchOptionInExBtn">
                   <button type="button" class="btn btn-xs btn-link">More</button>
-                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                  <button type="button" class="btn btn-xs btn-link" data-toggle="modal" data-target="#sidebarModal">View All</button>
                   <button type="button" class="btn btn-xs btn-default">Exclude</button>
                   <button type="button" class="btn btn-xs btn-default">Include</button>
                 </div>
@@ -229,7 +251,7 @@
                 <label for="Erte"><span class="checkbox"></span>Erte <span class="quantity badge">29</span></label>
                 <div class="searchOptionInExBtn">
                   <button type="button" class="btn btn-xs btn-link">More</button>
-                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                  <button type="button" class="btn btn-xs btn-link" data-toggle="modal" data-target="#sidebarModal">View All</button>
                   <button type="button" class="btn btn-xs btn-default">Exclude</button>
                   <button type="button" class="btn btn-xs btn-default">Include</button>
                 </div>
@@ -251,7 +273,7 @@
                 <label for="Other"><span class="checkbox"></span>Other <span class="quantity badge">14</span></label>
                 <div class="searchOptionInExBtn">
                   <button type="button" class="btn btn-xs btn-link">More</button>
-                  <button type="button" class="btn btn-xs btn-link">View All</button>
+                  <button type="button" class="btn btn-xs btn-link" data-toggle="modal" data-target="#sidebarModal">View All</button>
                   <button type="button" class="btn btn-xs btn-default">Exclude</button>
                   <button type="button" class="btn btn-xs btn-default">Include</button>
                 </div>
@@ -259,133 +281,645 @@
             </li>
           </ul>
         </div>
+        <div class="dark-overlay"></div>
         
-<!-- Modal -->
-<div class="modal fade" id="sidebarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Format</h4>
-      </div>
-      <div class="modal-nav">
-        <h4>Sort</h4>
-        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Alphabetical</button>
-        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Relevance</button>
-      </div>
-      <div class="modal-body">
-        <form class="searchOption-viewAll">
-          <input type="checkbox" id="BooksA">
-          <label for="BooksA"><span class="checkbox"></span>Books <span class="quantity badge">2596</span></label>
-          <input type="checkbox" id="ImageA">
-          <label for="ImageA"><span class="checkbox"></span>Image <span class="quantity badge">1502</span></label>
-          <input type="checkbox" id="E-BooksA">
-          <label for="E-BooksA"><span class="checkbox"></span>E-Books/Electronic Resources <span class="quantity badge">655</span></label>
-          <input type="checkbox" id="DVDA">
-          <label for="DVDA"><span class="checkbox"></span>DVD <span class="quantity badge">77</span></label>
-          <input type="checkbox" id="PeriodicalsA">
-          <label for="PeriodicalsA"><span class="checkbox"></span>Periodicals <span class="quantity badge">63</span></label>
-          <input type="checkbox" id="VHSTapeA">
-          <label for="VHSTapeA"><span class="checkbox"></span>VHS tape <span class="quantity badge">3</span></label>
-          <input type="checkbox" id="NonProjectedGraphicA">
-          <label for="NonProjectedGraphicA"><span class="checkbox"></span>Non projected graphic <span class="quantity badge">1</span></label>
-          <input type="checkbox" id="OtherA">
-          <label for="OtherA"><span class="checkbox"></span>Other <span class="quantity badge">1</span></label>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-xs btn-link">Check All</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+        <!-- Modal -->
+        <div class="modal fade" id="sidebarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Format</h4>
+              </div>
+              <div class="modal-nav">
+                <h4>Sort</h4>
+                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Alphabetical</button>
+                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Relevance</button>
+              </div>
+              <div class="modal-body">
+                <form class="searchOption-viewAll">
+                  <input type="checkbox" id="BooksA">
+                  <label for="BooksA"><span class="checkbox"></span>Books <span class="quantity badge">2596</span></label>
+                  <input type="checkbox" id="ImageA">
+                  <label for="ImageA"><span class="checkbox"></span>Image <span class="quantity badge">1502</span></label>
+                  <input type="checkbox" id="E-BooksA">
+                  <label for="E-BooksA"><span class="checkbox"></span>E-Books/Electronic Resources <span class="quantity badge">655</span></label>
+                  <input type="checkbox" id="DVDA">
+                  <label for="DVDA"><span class="checkbox"></span>DVD <span class="quantity badge">77</span></label>
+                  <input type="checkbox" id="PeriodicalsA">
+                  <label for="PeriodicalsA"><span class="checkbox"></span>Periodicals <span class="quantity badge">63</span></label>
+                  <input type="checkbox" id="VHSTapeA">
+                  <label for="VHSTapeA"><span class="checkbox"></span>VHS tape <span class="quantity badge">3</span></label>
+                  <input type="checkbox" id="NonProjectedGraphicA">
+                  <label for="NonProjectedGraphicA"><span class="checkbox"></span>Non projected graphic <span class="quantity badge">1</span></label>
+                  <input type="checkbox" id="OtherA">
+                  <label for="OtherA"><span class="checkbox"></span>Other <span class="quantity badge">1</span></label>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-xs btn-link">Check All</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="resultDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Detail</h4>
+              </div>
+              <div class="modal-body">
+                
+                
+                
+                
+            <div class="resultCell detail">
+              <div class="imgBox"><img src="img/English%20graphic.jpeg"></div>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4" data-toggle="modal" data-target="#resultDetail">English Graphic</span><span class="badge">Available</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Lubbock, Tom</span> — 1957–2011.</span></p>
+                <p><span class="h6 caption">Other Contributor</span><span class="dpt-text"><span class="author">Coutts, Marion</span></p>
+                <p><span class="h6 caption">ISBN</span><span class="dpt-text">9780711233706</span></p>
+                <p><span class="h6 caption">Publication</span><span class="dpt-text">London: Frances Lincoln Limited, &copy;2012</span></p>
+                <p><span class="h6 caption">Edition</span><span class="dpt-text">1<sup>th</sup></span></p>
+                <p><span class="h6 caption">Physical Description</span><span class="dpt-text">207 p.: ill. (some col.); 23 cm</span></p>
+              </div>
+
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
+              
+              <div class="description description-sup">
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">NC978 .L833 2012</span></p>
+                <p><span class="h6 caption">Home Location</span><span class="dpt-text">Book in Stacks area</span></p>
+                <p><span class="h6 caption">Material Type</span><span class="dpt-text">Book</span></p>
+                <p><span class="h6 caption">Item Notes</span><span class="dpt-text">STAFF. Worldwide, 05/09/13</span></p>
+                <p><span class="h6 caption">Current Location</span><span class="dpt-text">Stacks</span></p>
+              </div>
+            </div>
+                
+                
+                
+                
+                
+                
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+<!--    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>-->
+    <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Summary</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Review</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Excerpts</a></li>
+    <li role="presentation"><a href="#content" aria-controls="content" role="tab" data-toggle="tab">Table of Content</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+<!--    <div role="tabpanel" class="tab-pane active" id="home">...</div>-->
+    <div role="tabpanel" class="tab-pane active" id="profile">
+      <h4>Summary</h4>
+      <p><span class="italic">English Graphic</span> is a book of essays on the subject of illustration, with the focus entirely on English artists using graphic media; drawings, prints and watercolours. The pieces are largely drawn from Tom Lubbock's weekly <span class="italic">Great Works column</span> for the <span class="italic">Independent</span>, with some longer pieces originally published as reviews or catalogue essays. The historical span of the book is broad #150; from the <span class="italic">Uffington White Horse</span> to the <span class="italic">Winchester Psalter Hellmouth</span> to <span class="italic">Harry Beck's London Underground Map</span> and beyond. The high point of English Graphic art in the late eighteenth and early nineteenth century makes up the heart of the book, with Fuseli, Blake, Bewick and Palmer all the subject of extended essays. The fifty or so images range from the visionary to the empirical, from folk art to caricature. Connecting and overlapping ideas on line and shape run through the book; maps, islands, clouds, swarms, wombs, skins, dots, contours and boundaries. Energetic, coherent and strange, English Graphic presents an electrical storm of ideas and illuminations provocatively argued by one of our most brilliant writers on art.</p>
+      <h4>Author Notes</h4>
+      <p>TOM LUBBOCK, critic and illustrator, was the chief art critic of the <span class="italic">Independent</span> from 1997 until his death in 2011. He is the author of <span class="italic">Great Works</span> and <span class="italic">Until Further Notice, I Am Alive</span>. As well as major catalogue essays on <span class="italic">Goya</span>, <span class="italic">Thomas Bewick</span> and <span class="italic">Ian Hamilton Finlay</span>. His illustrations, mainly done in collage, appeared every Saturday on the editorial page of the Independent between 1999 and 2004. His weekly <span class="italic">Great Works column</span>, from which some of these essays are taken, ran between 2005 and 2010. JAMIE McKENDRICK is the author of five collections of poetry including <span class="italic">The Marble Fly (1997)</span>, winner of the <span class="italic">Forward Poetry Prize; Ink Stone (2003)</span>, which was shortlisted for the <span class="italic">2003 T. S. Eliot Prize</span> and the <span class="italic">2003 Whitbread Poetry Award</span>; and <span class="italic">Crocodiles &amp; Obelisks (2007)</span>, shortlisted for the <span class="italic">Forward Prize</span>. He is editor of <span class="italic">20th-Century Italian Poems (2004)</span> and his translations of the poetry of <span class="italic">Valerio Magrelli, The Embrace (2009)</span>, was awarded the <span class="italic">Weidenfeld Translation</span> prize for 2010.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+      <h4>Choice Review</h4>
+      <p>What links Leviathan and a flea, Albion Rose and Lincoln Cathedral rose, Rowlandson's "Marring a Face" and the face of the moon, "In a Shoreham Garden" and the slave trade? They all prompted Lubbock to write brief, evocative, literate meditations on a wide variety of English "graphics," including maps, diagrams, watercolors, portrait miniatures, manuscript illumination, cartoons, and even a Bronze Age earth "drawing," the Uffington White Horse. Lubbock, chief art critic of the Independent from 1997 until his death in 2011, has written a book of essays on the subject of illustration and drawing. The images discussed range from the empirical to the visionary and from fine art to folk art, caricature, and cartoons. Lubbock writes insightful mini-essays that reflect a fine eye, literate sensibility, and voracious curiosity. He is particularly interested in the relations between writing and drawing, and between thought and illustration. He invokes literature, poetry, philosophy, and science to explore a wide range of fascinating imagery. But does the intended audience consist of artists, writers and critics, and students of graphic arts and illustration, or general readers of beautifully produced, intelligent, and easy-to-read books? Probably all of the above. Summing Up: Recommended. Lower- and upper-level undergraduates, professionals/practitioners, and general readers. W. E. Wallace Washington University</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="settings">
+      <p>West Bromwich Sweep There's nothing to beat seeing a man being beaten to a pulBefore boxing-gloves were introduced by the Queensbury Rules of 1867, bare-knuckle fighting could cause extreme facial damage. And it is clear from images and written accounts that the mess was part of the fun. For instance, there's Thomas Rowlandson's Six Stages of Marring a Face (1792) - a cartoon-strip, depicting step-by-step the wreckage of a boxer's features. No opponent is shown. All attention is on the spectacle of progressive and bloody rearrangement. William Hazlitt wrote a horrible little essay called The Fight (1822), in which he describes how he and other lovers of "The FANCY" take an excursion out of London to watch a big match between William Neate and The Gas-man (as he's nick-named). Hazlitt coos and twitters at the prospect, and then at the sight, of two fellows smashing each other to bits. He tosses in literary quotations and classical allusions. He thrills self-consciously at the crudely violent but yet magnificent manliness of it all. He relishes the chance to exercise his powers of description, as the Gas-man gets the worst of it. The Gas-man aimed "a mortal blow at his adversary's neck." But Neate "returned it with his left at full swing, planted a tremendous blow on his cheek-bone and eyebrow, and made a red ruin of that side of his face. The Gas-man went down... all one side of his face was perfect scarlet, and his right eye was closed in dingy blackness." The fight continues. And "to see two men smashed to the ground, smeared with gore, stunned, senseless, the breath beaten out of their bodies; and then, before you recover from the shock, to see them rise up with new strength and courage... - this is the high and heroic state of man!" But at last the Gas-man falls. "I never saw anything more terrific than his aspect just before he fell. All traces of life, of natural expression, were gone from him. His face was like a human skull, a death's head, spouting blood. The eyes were filled with blood, the nose streamed with blood, the mouth gaped blood. He was not like an actual man, but like a preternatural, spectral appearance, or like one of the figures in Dante's Inferno." Blood, blood, blood, blood, Dante. It is not this great English writer's finest hour. Sometimes one piece of work can repair, make up for, the damage done by another. And if there is a work that makes up for the frivolous sadism of The Fight, it's a picture by an anonymous English folk artist entitled West Bromwich SweeHazlitt's writing is fixated on the spectacle of violence. The picture imagines what it feels like. Its overall technique is pretty rough. Its evocation of pain is overwhelming. "WESTBROMWICH SWEEP As he appeared at george Holdens after his fight with fred higgit being waited on by Jem Parker through wose superior Generalship he won his Battle in 1 hour and 26 mineets on the 7 January 1850", reads the semi-literate caption. This is a detail, and if you look in the original at the pictures hanging on the wall of the pub, either side of the strangely beautiful candle-holder, you can see how the Fancy was normally portrayed: the man posed, ready before the fight, dukes up, showing his brisket. But here we see the aftermath, the tending of wounds. And it's in the depiction of the boxer's head that this image shocks, and exceeds all expectation. It's not the Sweep's heavy bruising and swelling as such that the picture stresses - it's his searing pain, extreme tenderness, sensory confusion and general pitifulness. His head is inflated, too big for his body (the other figures' heads are all in scale). Its sensations become larger than anyone else's in the room. It also becomes babylike, helpless. And the head-body joint is not properly articulated at the jaw. The head simply grows out of the neck, it is itself a swelling, a ballooning lump of flesh without self-control; helpless again. Or look at the features. There's the right eye, "closed in dingy darkness", formed like a black butterfly. The shape represents its contusion, but this symmetrical graphic sign also feels like it's stamped onto the face. The eye has been simply obliterated, turned into this blind and meaningless mark. And there's the left eye, bruised and blackened, and depicted as a negative shape, cut into the edge of the face like a slot. The bruising of the cheek is made of pure blackness that stains or corrodes into the side of the face from the edge. And the extreme tenderness of this cheek is conveyed by the extreme gentleness of the flannel that is dabbing against it. It only barely touches it. The bounding contours of cheek and flannel just meet, tangentially. The image winces at their point of contact. Most of all, there is the man's mouth. Its contusion curves it upwards into a pathetic involuntary smile (more pitiful helplessness). And as it curves up, the arc of the upper-lip becomes not quite readable. If you try to follow it along, you can't tell where this lip-line is meant to stop, or what path it takes. It could end smartly at the edge of the face. It could seamlessly curve into and become one with the contour of the blackened cheek (the swollen mouth losing all identity). Or it could curve back more sharply, becoming the edge of the pink area round the nose (making an especially fat lip). Now a viewer doesn't need to have these specific alternatives in mind. All you need register is that you can't grasp what the boxer's face is doing at this point - and nor can the boxer himself. The uncertainty of the image mimes his sensory disorientation, the thickening and blurring of the sensation in severely ruined flesh. This is picturing as empathy, the image fully inward with the agony it shows. There's nothing like it outside Picasso. Naïve art, or folk art, or vernacular art - increasingly polite words for the same thing - is usually anonymous. Some more modern artists, like Douanier Rousseau, Grandma Moses, Alfred Wallis and James Dixon, became famous by name. But the provincial amateurs who painted prize porkers and ships in full rigging during the 18th and 19th centuries largely remain among the great unknowns. The best collection of English Folk Art is at Compton Verney house in the heart of Warwickshire. Excerpted from English Graphic by Tom Lubbock All rights reserved by the original copyright owners. Excerpts are provided for display purposes only and may not be reproduced, reprinted or distributed without the written permission of the publisher.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="content">
+      <table class="table">
+        <thead>
+          <th>Chapter</th>
+          <th style="width: 64px;">Page</th>
+        </thead>
+        <tr>
+          <td>Introduction</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>The Uffington White Horse</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Hellmouth</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Mappa Mundi</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>Two English Maps</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>The Bishop's Eye</td>
+          <td>32</td>
+        </tr>
+        <tr>
+          <td>Portrait of an Unknown Man Clasping a Hand from a Cloud</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <td>Leviathan</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>The Flea</td>
+          <td>44</td>
+        </tr>
+        <tr>
+          <td>Fantasy of Flight</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>Characters and Caricaturas</td>
+          <td>52</td>
+        </tr>
+        <tr>
+          <td>A Complete New System of Midwifery</td>
+          <td>56</td>
+        </tr>
+        <tr>
+          <td>Fuseli to Frankenstein</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>A Blot: Tigers</td>
+          <td>68</td>
+        </tr>
+        <tr>
+          <td>A Foregathering of Witches</td>
+          <td>72</td>
+        </tr>
+        <tr>
+          <td>Ambleside</td>
+          <td>78</td>
+        </tr>
+        <tr>
+          <td>The Source of the Arveiron</td>
+          <td>82</td>
+        </tr>
+        <tr>
+          <td>The British Slave Ship 'Brookes'</td>
+          <td>86</td>
+        </tr>
+        <tr>
+          <td>Mending a Face / Marring a Face</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>The Face of the Moon</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>The Gout</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>A Democrat</td>
+          <td>102</td>
+        </tr>
+        <tr>
+          <td>Electra and the Chorus</td>
+          <td>106</td>
+        </tr>
+        <tr>
+          <td>Blake Shapes</td>
+          <td>110</td>
+        </tr>
+        <tr>
+          <td>Jerusalem the Emanation of the Giant Albion</td>
+          <td>118</td>
+        </tr>
+        <tr>
+          <td>Albion Rose</td>
+          <td>122</td>
+        </tr>
+        <tr>
+          <td>Defining the Vignette</td>
+          <td>126</td>
+        </tr>
+        <tr>
+          <td>Vision and Landscape</td>
+          <td>138</td>
+        </tr>
+        <tr>
+          <td>In a Shoreham Garden</td>
+          <td>144</td>
+        </tr>
+        <tr>
+          <td>A Fantasy: The Fairy Ring</td>
+          <td>148</td>
+        </tr>
+        <tr>
+          <td>West Bromwich Sweep</td>
+          <td>152</td>
+        </tr>
+        <tr>
+          <td>Alice Overgrowing the Room</td>
+          <td>156</td>
+        </tr>
+        <tr>
+          <td>Portrait of Himself in Bed</td>
+          <td>160</td>
+        </tr>
+        <tr>
+          <td>Mr Aubrey Beardsley</td>
+          <td>164</td>
+        </tr>
+        <tr>
+          <td>Sower of the Systems</td>
+          <td>168</td>
+        </tr>
+        <tr>
+          <td>The New Word in Golf</td>
+          <td>174</td>
+        </tr>
+        <tr>
+          <td>The London Underground Map</td>
+          <td>178</td>
+        </tr>
+        <tr>
+          <td>Red Figures Carrying Babies and Visiting Graves</td>
+          <td>182</td>
+        </tr>
+        <tr>
+          <td>Fragments 6/9</td>
+          <td>186</td>
+        </tr>
+        <tr>
+          <td>The Hermit</td>
+          <td>190</td>
+        </tr>
+        <tr>
+          <td>For the 5 Vowels</td>
+          <td>194</td>
+        </tr>
+        <tr>
+          <td>Index</td>
+          <td>201</td>
+        </tr>
+        <tr>
+          <td>Editor's Note</td>
+          <td>205</td>
+        </tr>
+        <tr>
+          <td>Acknowledgements</td>
+          <td>207</td>
+        </tr>
+      </table>
     </div>
   </div>
+
 </div>
+                
+                
+                
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+
         
-        <div class="col-md-9 col-md-offset-3 main">
-          <h1 class="page-header">Showing result for: Graphic</h1>
-<!--          <h2 class="sub-header">141 Results Found</h2>          -->
-        </div>
-        <div class="table-responsive col-md-offset-3" style="clear:both;">
-          <div class="container-fluid" style="background-color:#fafafa;">4933 Results Found Sort</div>
-        </div>
-        <div class="resultTable col-md-offset-3">
-          <div class="resultCell">
-            <div class="imgBox"><img src="img/Kandinsky.jpeg"></div>
-            <div class="description">
-              <p><span class="h6 caption">Title</span><span class="dpt-text">Kandinsky (Milwaukee Art Museum)</span><span class="badge">NEW</span></p>
-              <p><span class="h6 caption">Author</span><span class="dpt-text">-</span></p>
-              <p><span class="h6 caption">Call Number</span><span class="dpt-text">N6999 .K33 A4 2014   Book in Quarto area</span></p>
-              <p><span class="h6 caption">Publication</span><span class="dpt-text">PARIS : CENTRE POMPIDOU ; MILWAUKEE, WISC. : MILWAUKEE ART MUSEUM, [2014] NEW HAVEN : YALE UNIVERSITY PRESS ©2014</span></p>
-              <p><span class="h6 caption">Copies Available</span><span class="dpt-text">1</span></p>
-              <p><span class="h6 caption">Available in Reserves</span><span class="dpt-text">0</span></p>
+        
+        <div class="col-md-offset-300px main">
+          <div class="search-toolBar">
+            <input type="checkbox" id="SelectAll">
+            <label for="SelectAll"><span class="checkbox"></span></label>
+<!--            <button type="button" class="btn btn-default">Add to my list</button>-->
+            
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">Add to my list</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="#">Add to my list</a></li>
+                <li><a href="#">Text this to me</a></li>
+                <li><a href="#">Cite this</a></li>
+              </ul>
             </div>
-            <p class="actionBtnCon">
-              <button type="button" class="btn btn-xs btn-default">Text this to me</button>
-              <button type="button" class="btn btn-xs btn-default">Buy it now</button>
-              <button type="button" class="btn btn-xs btn-default">Cite this</button>
-            </p>
+            
+            <div class="search-toolBar-pagination">
+              <span class="pagination-caption">Showing <b>1–10</b> (4933 Results Found)</span>
+              <button class="btn btn-default paginationLeft glyphicon glyphicon-th-list" aria-hidden="true"></button>
+              <button class="btn btn-default paginationRight glyphicon glyphicon-th-large" aria-hidden="true"></button>
+            </div>
           </div>
+          
 
 
-
-          <div class="resultCell">
-            <div class="imgBox"><img src="img/Culture.jpeg"></div>
-            <div class="description">
-              <p><span class="h6 caption">Title</span><span class="dpt-text">Kandinsky (Milwaukee Art Museum)</span></p>
-              <p><span class="h6 caption">Author</span><span class="dpt-text">-</span></p>
-              <p><span class="h6 caption">Call Number</span><span class="dpt-text">N6999 .K33 A4 2014   Book in Quarto area</span></p>
-              <p><span class="h6 caption">Publication</span><span class="dpt-text">PARIS : CENTRE POMPIDOU ; MILWAUKEE, WISC. : MILWAUKEE ART MUSEUM, [2014] NEW HAVEN : YALE UNIVERSITY PRESS ©2014</span></p>
-              <p><span class="h6 caption">Copies Available</span><span class="dpt-text">1</span></p>
-              <p><span class="h6 caption">Available in Reserves</span><span class="dpt-text">0</span></p>
+<!--          <div class="resultTable grid">-->
+          <div class="resultTable">
+            <div class="sidebar-toggle"><span>Refine Search</span></div>
+            <div class="resultCell">
+              <input type="checkbox" id="English%20graphic">
+              <label for="English%20graphic">
+                <span class="checkbox"></span>
+                <div class="imgBox"><img src="img/English%20graphic.jpeg">
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default">Quick Look</button>
+                  </p>
+                </div>
+              </label>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4" data-toggle="modal" data-target="#resultDetail">English Graphic</span><span class="badge">Available</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Lubbock, Tom</span> — 1957–2011.</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Other Contributor</span><span class="dpt-text"><span class="author">Coutts, Marion</span></p>
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">NC978 .L833 2012, Book in Stacks area</span></p>
+                <p class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9780711233706</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">London: Frances Lincoln Limited, &copy;2012</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">1<sup>th</sup></span></p>
+              </div>
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
             </div>
-            <p class="actionBtnCon">
-              <button type="button" class="btn btn-xs btn-default">Text this to me</button>
-              <button type="button" class="btn btn-xs btn-default">Buy it now</button>
-              <button type="button" class="btn btn-xs btn-default">Cite this</button>
-            </p>
-          </div>            
 
-          <div class="resultCell">
-            <div class="imgBox"><img src="img/Korra.jpeg"></div>
-            <div class="description">
-              <p><span class="h6 caption">Title</span><span class="dpt-text">Kandinsky (Milwaukee Art Museum)</span></p>
-              <p><span class="h6 caption">Author</span><span class="dpt-text">-</span></p>
-              <p><span class="h6 caption">Call Number</span><span class="dpt-text">N6999 .K33 A4 2014   Book in Quarto area</span></p>
-              <p><span class="h6 caption">Publication</span><span class="dpt-text">PARIS : CENTRE POMPIDOU ; MILWAUKEE, WISC. : MILWAUKEE ART MUSEUM, [2014] NEW HAVEN : YALE UNIVERSITY PRESS ©2014</span></p>
-              <p><span class="h6 caption">Copies Available</span><span class="dpt-text">1</span></p>
-              <p><span class="h6 caption">Available in Reserves</span><span class="dpt-text">0</span></p>
+            <div class="resultCell">
+              <input type="checkbox" id="The%20Graphic%20Edge">
+              <label for="The%20Graphic%20Edge">
+                <span class="checkbox"></span>
+                <div class="imgBox"><img src="img/no_image.png">
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default">Quick Look</button>
+                  </p>
+                </div>
+              </label>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4">The Graphic Edge</span><span class="badge greyOut">Unavailable</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Poynor, Rick</p>
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">NC978 .L833 2012, Book in Stacks area</span></p>
+                <p class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9781873968079, 9780891345879</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">London: Booth-Clibborn Editions: Internos Books; Cincinnati, Ohio: Distributed in the United States and Canada by North Light Books, &copy;1993</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">1<sup>th</sup></span></p>
+              </div>
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
             </div>
-            <p class="actionBtnCon">
-              <button type="button" class="btn btn-xs btn-default">Text this to me</button>
-              <button type="button" class="btn btn-xs btn-default">Buy it now</button>
-              <button type="button" class="btn btn-xs btn-default">Cite this</button>
-            </p>
-          </div>            
 
-          <div class="resultCell">
-            <div class="imgBox"><img src="img/Medieval.jpeg"></div>
-            <div class="description">
-              <p><span class="h6 caption">Title</span><span class="dpt-text">Kandinsky (Milwaukee Art Museum)</span></p>
-              <p><span class="h6 caption">Author</span><span class="dpt-text">-</span></p>
-              <p><span class="h6 caption">Call Number</span><span class="dpt-text">N6999 .K33 A4 2014   Book in Quarto area</span></p>
-              <p><span class="h6 caption">Publication</span><span class="dpt-text">PARIS : CENTRE POMPIDOU ; MILWAUKEE, WISC. : MILWAUKEE ART MUSEUM, [2014] NEW HAVEN : YALE UNIVERSITY PRESS ©2014</span></p>
-              <p><span class="h6 caption">Copies Available</span><span class="dpt-text">1</span></p>
-              <p><span class="h6 caption">Available in Reserves</span><span class="dpt-text">0</span></p>
+            <div class="resultCell">
+              <input type="checkbox" id="Graphic%20communications%20today">
+              <label for="Graphic%20communications%20today">
+                <span class="checkbox"></span>
+                <div class="imgBox"><img src="img/Graphic%20communications%20today.jpeg">
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default">Quick Look</button>
+                  </p>
+                </div>
+              </label>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4">Graphic Communications Today</span><span class="badge onSite">In-Library Only</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Ryan, William E</span></span></p>
+                <p class="resultCell-list"><span class="h6 caption">Other Contributor</span><span class="dpt-text"><span class="author">Conover, Theodore E</span></span></p>
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">Z246 .C58 2004, Book in Quarto area</span></p>
+                <p class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9780766820753</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">Clifton Park, NY: Thomson/Delmar Learning, &copy;2004</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">4<sup>th</sup></span></p>
+              </div>
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
+            </div>            
+
+            <div class="resultCell">
+              <input type="checkbox" id="Graphic%20design%20basics">
+              <label for="Graphic%20design%20basics">
+                <span class="checkbox"></span>
+                <div class="imgBox"><img src="img/Graphic%20design%20basics.jpeg">
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default">Quick Look</button>
+                  </p>
+                </div>
+              </label>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4">Graphic Design Basics</span><span class="badge">Available</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Arntson, Amy E</span></span></p>
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">NC1000 .A765 2007, Book in Quarto area</span></p>
+                <p class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9780495006930</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">Australia; United States: Thomson/Wadsworth, ©2007</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">5<sup>th</sup></span></p>
+              </div>
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
+            </div> 
+
+            <div class="resultCell">
+              <input type="checkbox" id="Graphic%20Design%20Reader">
+              <label for="Graphic%20Design%20Reader">
+                <span class="checkbox"></span>
+                <div class="imgBox"><img src="img/Graphic%20Design%20Reader.jpeg">
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default">Quick Look</button>
+                  </p>
+                </div>
+              </label>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4">Graphic Design Reader</span><span class="badge">Available</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Heller, Steven</span></span></p>
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">E-Book</span></p>
+                <p class="resultCell-list" class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9781581159745</span></p>
+                <p class="resultCell-list" class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">New York: Constable &amp; Robinson, &copy;2012</span></p>
+                <p class="resultCell-list" class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">1<sup>th</sup></span></p>
+              </div>
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
+            </div>            
+
+            <div class="resultCell">
+              <input type="checkbox" id="Graphic%20design%20solutions">
+              <label for="Graphic%20design%20solutions">
+                <span class="checkbox"></span>
+                <div class="imgBox"><img src="img/Graphic%20design%20solutions.jpeg">
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default">Quick Look</button>
+                  </p>
+                </div>
+              </label>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4">Graphic Design Solutions</span><span class="badge">Available</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Landa, Robin</span></span></p>
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">NC997 .L32 2014, Material in Reference area</span></p>
+                <p class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9781133945529</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">Boston, MA: Wadsworth/Cengage Learning, &copy;2014</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">5<sup>th</sup></span></p>
+              </div>
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
+            </div> 
+
+            <div class="resultCell">
+              <input type="checkbox" id="Graphic%20design%20sources">
+              <label for="Graphic%20design%20sources">
+                <span class="checkbox"></span>
+                <div class="imgBox"><img src="img/Graphic%20design%20sources.jpeg">
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default">Quick Look</button>
+                  </p>
+                </div>
+              </label>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4">Graphic Design Sources</span><span class="badge">Available</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Hiebert, Kenneth J</span></span></p>
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">NC1000 .H55 1998, Book in Quarto area</span></p>
+                <p class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9780300074611</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">New Haven, CT: Yale University Press, &copy;1998</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">1<sup>th</sup></span></p>
+              </div>
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
             </div>
-            <p class="actionBtnCon">
-              <button type="button" class="btn btn-xs btn-default">Text this to me</button>
-              <button type="button" class="btn btn-xs btn-default">Buy it now</button>
-              <button type="button" class="btn btn-xs btn-default">Cite this</button>
-            </p>
+
+            <div class="resultCell">
+              <input type="checkbox" id="The%20Graphic%20Alphabet">
+              <label for="The%20Graphic%20Alphabet">
+                <span class="checkbox"></span>
+                <div class="imgBox"><img src="img/The%20Graphic%20Alphabet.jpeg">
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default">Quick Look</button>
+                  </p>
+                </div>
+              </label>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4">The Graphic Alphabet</span><span class="badge">Available</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Pelletier, David</span></span></p>
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">PE1155 .P45 1996, Book in Stacks area</span></p>
+                <p class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9780531360019</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">New York: Orchard, &copy;1996</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">1<sup>th</sup></span></p>
+              </div>
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
+            </div>
+
+            <div class="resultCell">
+              <input type="checkbox" id="UXL%20Graphic%20Novelists">
+              <label for="UXL%20Graphic%20Novelists">
+                <span class="checkbox"></span>
+                <div class="imgBox"><img src="img/UXL%20Graphic%20Novelists.jpeg">
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default">Quick Look</button>
+                  </p>
+                </div>
+              </label>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4">UXL Graphic Novelists</span><span class="badge">Available</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Pendergast, Tom</span></span></p>
+                <p class="resultCell-list"><span class="h6 caption">Other Contributor</span><span class="dpt-text"><span class="author">Pendergast, Sara</span></span></p>
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">NC1305 .P46 2007 V.1, Material in Reference area</span></p>
+                <p class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9781414404400, 9781414404417, 9781414404424, 9781414404431</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">Detroit: UXL, &copy;2007</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">1<sup>th</sup></span></p>
+              </div>
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
+            </div>
+
+            <div class="resultCell">
+              <input type="checkbox" id="Green%20Graphic%20Design">
+              <label for="Green%20Graphic%20Design">
+                <span class="checkbox"></span>
+                <div class="imgBox"><img src="img/Green%20Graphic%20Design.jpeg">
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default">Quick Look</button>
+                  </p>
+                </div>
+              </label>
+              <div class="description">
+                <p><span class="h6 caption">Title</span><span class="dpt-text h4">Green Graphic Design</span><span class="badge">Available</span></p>
+                <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Dougherty, Brian</span></span></p>
+                <p class="resultCell-list"><span class="h6 caption">Other Contributor</span><span class="dpt-text"><span class="author">Celery Design Collaborative</span></span></p>
+                <p><span class="h6 caption">Call Number</span><span class="dpt-text">NC997 .D69 2008, Book in Stacks area</span></p>
+                <p class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9781581155112</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">New York, NY : Allworth Press, &copy;2008</span></p>
+                <p class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">1<sup>th</sup></span></p>
+              </div>
+              <p class="actionBtnCon">
+                <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+              </p>
+            </div>            
+
           </div>
-
-
-
-
-
-
+            
         </div>
+        <nav class="col-md-offset-300px search-pagination">
+          <ul class="pagination">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="disabled"><a href="#">&hellip;</a></li>
+            <li><a href="#">494</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <footer class="col-md-offset-300px search-footer">
+          <p class="pull-right"><a href="#">Back to top</a></p>
+          <p>&copy; 2015 Maryland Institute College of Art &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+
+          
       </div>
     </div>
 
@@ -394,8 +928,16 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/main.js"></script>
     <script src="assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      
+      $('.glyphicon-th-large').on('click', function() {
+        $('.resultTable').toggleClass('grid');
+      });
+      
+    </script>
   </body>
 </html>
