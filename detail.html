@@ -4,389 +4,365 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="MICA Decker Library">
+    <meta name="author" content="Kit Tee">
     <link rel="icon" href="../../favicon.ico">
-
     <title>MICA Decker Library | English Graphic</title>
-
     <!-- Bootstrap core CSS -->
-<!--    <link href="dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="dist/css/bootstrap.css" rel="stylesheet">
-    <link href="dist/css/offcanvas.css" rel="stylesheet">
-
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]><script src="dist/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/search.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body style="padding-top: 0;">
+  <body>
+
     <div class="navbar-wrapper">
-
-        <nav class="navbar navbar navbar-static-top">
-<!--        <nav class="navbar navbar-inverse navbar-static-top">-->
-          <div class="container">
-            <div class="navbar-header">
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-              <a class="navbar-brand" href="#">Decker Library</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">News Archive</a></li>
-                    <li><a href="#">Library Staff Listing</a></li>
-                    <li><a href="#">FAQs</a></li>
-<!--                    <li><a href="#">Support the Library</a></li>-->
-                  </ul>
-                </li>
-                <li><a href="#local-libraries">Local Libraries</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services &amp; Facilities <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Services &amp; Facilities</li>
-                    <li><a href="#">Computer Workstations</a></li>
-                    <li><a href="#">Copy-Print-Scan</a></li>
-                    <li><a href="#">Interlibrary Loan</a></li>
-                    <li><a href="#">Orientations</a></li>
-                    <li><a href="#">Research Advisor Program</a></li>
-                    <li><a href="#">Reserves</a></li>
-                    <li><a href="#">Screening Room</a></li>
-                    <li><a href="#">E-Books</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Policies &amp; Guidelines</li>
-                    <li><a href="#">Policies</a></li>
-                    <li><a href="#">Exhibition</a></li>
-                    <li><a href="#">Student</a></li>
-                    <li><a href="#">Pre-College</a></li>
-                    <li><a href="#">Continuing Studies</a></li>
-                    <li><a href="#">Low Residency</a></li>
-                    <li><a href="#">Faculty</a></li>
-                    <li><a href="#">Staff</a></li>
-                    <li><a href="#">Alumni</a></li>
-                    <li><a href="#">Baltimore Academic Libraries Consortium</a></li>
-                    <li><a href="#">Public</a></li>
-                    <li><a href="#">Computer</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Decker Library Catalog</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Special Collections</li>
-                    <li><a href="#">MICA Vertical File</a></li>
-                    <li><a href="#">MICA Masters Theses</a></li>
-                    <li><a href="#">MICA Archives</a></li>
-                    <li><a href="#">Masters Thesis Collection</a></li>
-                    <li><a href="#">Artist Files</a></li>
-                    <li><a href="#">A-Z Journal List</a></li>
-                    <li><a href="#">Text Finder</a></li>
-                    <li><a href="#">Book Arts Catalog</a></li>
-                    <li><a href="#">Journals, Sketchbooks &amp; Visual Diaries</a></li>
-                    <li><a href="#">Photograph Collections</a></li>
-                    <li><a href="#">Dover Series Index</a></li>
-                    <li><a href="#">Morris Louis Study Collection</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Research Databases</li>
-                    <li><a href="#">Research Guides</a></li>
-                    <li><a href="#">Reference Tools</a></li>
-                    <li><a href="#">Image Resources</a></li>
-                    <li><a href="#">Citation Guides</a></li>
-                    <li><a href="#">Databases List</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+      <nav class="navbar navbar navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Decker Library</a>
           </div>
-        </nav>
-
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="about.html#">News</a></li>
+                  <li><a href="#">Archive</a></li>
+                  <li><a href="about.html#staffListing">Library Staff Listing</a></li>
+                  <li><a href="about.html#FAQs">FAQs</a></li>
+                </ul>
+              </li>
+              <li><a href="#local-libraries">Local Libraries</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services   <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Orientations</a></li>
+                  <li><a href="#">Research Advisor Program</a></li>
+                  <li><a href="#">Screening Room</a></li>
+                  <li><a href="#">Reserves</a></li>
+                  <li><a href="#">E-Books</a></li>
+                  <li><a href="#">Interlibrary Loan</a></li>
+                  <li><a href="#">Exhibition</a></li>
+                  <li><a href="#">Copy-Print-Scan</a></li>
+                  <li><a href="#">Computer Workstations</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="policy.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Policies <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="policy.html#General">General Guidelines</a></li>
+                  <li><a href="policy.html#Student">Student</a></li>
+                  <li><a href="policy.html#PreCollege">Pre-College</a></li>
+                  <li><a href="policy.html#ContinuingStudies">Continuing Studies</a></li>
+                  <li><a href="policy.html#LowResidency">Low Residency</a></li>
+                  <li><a href="policy.html#Faculty">Faculty</a></li>
+                  <li><a href="policy.html#Staff">Staff</a></li>
+                  <li><a href="policy.html#Alumni">Alumni</a></li>
+                  <li><a href="policy.html#BALC">Baltimore Libraries</a></li>
+                  <li><a href="policy.html#Public">Public</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header">Special Collections</li>
+                  <li><a href="#">MICA Vertical File</a></li>
+                  <li><a href="#">MICA Masters Theses</a></li>
+                  <li><a href="#">MICA Archives</a></li>
+                  <li><a href="#">Masters Thesis Collection</a></li>
+                  <li><a href="#">Artist Files</a></li>
+                  <li><a href="#">A-Z Journal List</a></li>
+                  <li><a href="#">Text Finder</a></li>
+                  <li><a href="#">Book Arts Catalog</a></li>
+                  <li><a href="#">Journals, Sketchbooks &amp; Visual Diaries</a></li>
+                  <li><a href="#">Photograph Collections</a></li>
+                  <li><a href="#">Dover Series Index</a></li>
+                  <li><a href="#">Morris Louis Study Collection</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Research Databases</li>
+                  <li><a href="#">Research Guides</a></li>
+                  <li><a href="#">Reference Tools</a></li>
+                  <li><a href="#">Image Resources</a></li>
+                  <li><a href="#">Citation Guides</a></li>
+                  <li><a href="#">Databases List</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
     
     <div class="resultDetail">
       <div class="container">
-<!--        <h1 class="page-header">Staff Listing</h1>-->
         <div class="row">
-
-        <div class="modal2">
-          <div class="col-md-12">
+          <div class="modal2">
             <div class="modal-content">
-              <div class="modal-body">
-                
-                <div class="resultCell detail">
-                  <div class="imgBox"><img src="img/English%20graphic.jpeg"></div>
-                  <div class="description">
-                    <p><span class="h6 caption">Title</span><span class="dpt-text h4" data-toggle="modal" data-target="#resultDetail">English Graphic</span><span class="badge">Available</span></p>
-                    <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Lubbock, Tom</span> — 1957–2011.</span></p>
-                    <p><span class="h6 caption">Other Contributor</span><span class="dpt-text"><span class="author">Coutts, Marion</span></p>
-                    <p><span class="h6 caption">ISBN</span><span class="dpt-text">9780711233706</span></p>
-                    <p><span class="h6 caption">Publication</span><span class="dpt-text">London: Frances Lincoln Limited, &copy;2012</span></p>
-                    <p><span class="h6 caption">Edition</span><span class="dpt-text">1<sup>th</sup></span></p>
-                    <p><span class="h6 caption">Physical Description</span><span class="dpt-text">207 p.: ill. (some col.); 23 cm</span></p>
+              <div class="resultCell active detail">
+                <input type="checkbox" id="English%20graphic">
+                <label for="English%20graphic">
+                  <span class="checkbox"></span>
+                  <div class="imgBox"><img src="img/English%20graphic.jpeg">
+                    <p class="quickLook">
+                      <button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#resultDetail">Quick Look</button>
+                    </p>
                   </div>
-
-                  <p class="actionBtnCon">
-                    <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
-                    <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
-                    <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
-                    <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+                </label>
+                <div class="description">
+                  <p><span class="h6 caption">Title</span><span class="dpt-text h4">English Graphic</span><span class="badge"><span>Available</span></span></p>
+                  <p><span class="h6 caption">Author</span><span class="dpt-text"><span class="author">Lubbock, Tom</span> — 1957–2011.</span></p>
+                  <p class="resultCell-list"><span class="h6 caption">Other Contributor</span><span class="dpt-text"><span class="author">Coutts, Marion</span></p>
+                  <p><span class="h6 caption">Call Number</span><span class="dpt-text">NC978 .L833 2012, Book in Stacks area</span></p>
+                  <p class="resultCell-list"><span class="h6 caption">ISBN</span><span class="dpt-text">9780711233706</span></p>
+                  <p class="resultCell-list"><span class="h6 caption">Publication</span><span class="dpt-text">London: Frances Lincoln Limited, &copy;2012</span></p>
+                  <p class="resultCell-list"><span class="h6 caption">Edition</span><span class="dpt-text">1<sup>th</sup></span></p>
+                  <p class="quickLook">
+                    <button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#resultDetail">Quick Look</button>
                   </p>
-
-                  <div class="description description-sup">
-                    <p><span class="h6 caption">Call Number</span><span class="dpt-text">NC978 .L833 2012</span></p>
-                    <p><span class="h6 caption">Home Location</span><span class="dpt-text">Book in Stacks area</span></p>
-                    <p><span class="h6 caption">Material Type</span><span class="dpt-text">Book</span></p>
-                    <p><span class="h6 caption">Item Notes</span><span class="dpt-text">STAFF. Worldwide, 05/09/13</span></p>
-                    <p><span class="h6 caption">Current Location</span><span class="dpt-text">Stacks</span></p>
+                </div>
+                <p class="actionBtnCon">
+                  <button type="button" class="btn btn-sm btn-default btn-block">Add to my list</button>
+                  <button type="button" class="btn btn-sm btn-default btn-block">Text this to me</button>
+                  <button type="button" class="btn btn-sm btn-default btn-block">Buy it now</button>
+                  <button type="button" class="btn btn-sm btn-default btn-block">Cite this</button>
+                </p>
+              </div>
+              <div role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Summary</a></li>
+                  <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Review</a></li>
+                  <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Excerpts</a></li>
+                  <li role="presentation"><a href="#content" aria-controls="content" role="tab" data-toggle="tab"><span class="hide-sm">Table of </span>Content</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="profile">
+                    <h4>Summary</h4>
+                    <p><em>English Graphic</em> is a book of essays on the subject of illustration, with the focus entirely on English artists using graphic media; drawings, prints and watercolours. The pieces are largely drawn from Tom Lubbock's weekly <em>Great Works column</em> for the <em>Independent</em>, with some longer pieces originally published as reviews or catalogue essays. The historical span of the book is broad #150; from the <em>Uffington White Horse</em> to the <em>Winchester Psalter Hellmouth</em> to <em>Harry Beck's London Underground Map</em> and beyond. The high point of English Graphic art in the late eighteenth and early nineteenth century makes up the heart of the book, with Fuseli, Blake, Bewick and Palmer all the subject of extended essays. The fifty or so images range from the visionary to the empirical, from folk art to caricature. Connecting and overlapping ideas on line and shape run through the book; maps, islands, clouds, swarms, wombs, skins, dots, contours and boundaries. Energetic, coherent and strange, English Graphic presents an electrical storm of ideas and illuminations provocatively argued by one of our most brilliant writers on art.</p>
+                    <h4>Author Notes</h4>
+                    <p>TOM LUBBOCK, critic and illustrator, was the chief art critic of the <em>Independent</em> from 1997 until his death in 2011. He is the author of <em>Great Works</em> and <em>Until Further Notice, I Am Alive</em>. As well as major catalogue essays on <em>Goya</em>, <em>Thomas Bewick</em> and <em>Ian Hamilton Finlay</em>. His illustrations, mainly done in collage, appeared every Saturday on the editorial page of the Independent between 1999 and 2004. His weekly <em>Great Works column</em>, from which some of these essays are taken, ran between 2005 and 2010. JAMIE McKENDRICK is the author of five collections of poetry including <em>The Marble Fly (1997)</em>, winner of the <em>Forward Poetry Prize; Ink Stone (2003)</em>, which was shortlisted for the <em>2003 T. S. Eliot Prize</em> and the <em>2003 Whitbread Poetry Award</em>; and <em>Crocodiles &amp; Obelisks (2007)</em>, shortlisted for the <em>Forward Prize</em>. He is editor of <em>20th-Century Italian Poems (2004)</em> and his translations of the poetry of <em>Valerio Magrelli, The Embrace (2009)</em>, was awarded the <em>Weidenfeld Translation</em> prize for 2010.</p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="messages">
+                    <h4>Choice Review</h4>
+                    <p>What links Leviathan and a flea, Albion Rose and Lincoln Cathedral rose, Rowlandson's "Marring a Face" and the face of the moon, "In a Shoreham Garden" and the slave trade? They all prompted Lubbock to write brief, evocative, literate meditations on a wide variety of English "graphics," including maps, diagrams, watercolors, portrait miniatures, manuscript illumination, cartoons, and even a Bronze Age earth "drawing," the Uffington White Horse. Lubbock, chief art critic of the Independent from 1997 until his death in 2011, has written a book of essays on the subject of illustration and drawing. The images discussed range from the empirical to the visionary and from fine art to folk art, caricature, and cartoons. Lubbock writes insightful mini-essays that reflect a fine eye, literate sensibility, and voracious curiosity. He is particularly interested in the relations between writing and drawing, and between thought and illustration. He invokes literature, poetry, philosophy, and science to explore a wide range of fascinating imagery. But does the intended audience consist of artists, writers and critics, and students of graphic arts and illustration, or general readers of beautifully produced, intelligent, and easy-to-read books? Probably all of the above. Summing Up: Recommended. Lower- and upper-level undergraduates, professionals/practitioners, and general readers. W. E. Wallace Washington University</p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="settings">
+                    <h4>Excerpts</h4>
+                    <p>West Bromwich Sweep There's nothing to beat seeing a man being beaten to a pulBefore boxing-gloves were introduced by the Queensbury Rules of 1867, bare-knuckle fighting could cause extreme facial damage. And it is clear from images and written accounts that the mess was part of the fun. For instance, there's Thomas Rowlandson's Six Stages of Marring a Face (1792) — a cartoon-strip, depicting step-by-step the wreckage of a boxer's features. No opponent is shown. All attention is on the spectacle of progressive and bloody rearrangement. William Hazlitt wrote a horrible little essay called The Fight (1822), in which he describes how he and other lovers of "The FANCY" take an excursion out of London to watch a big match between William Neate and The Gas-man (as he's nick-named). Hazlitt coos and twitters at the prospect, and then at the sight, of two fellows smashing each other to bits. He tosses in literary quotations and classical allusions. He thrills self-consciously at the crudely violent but yet magnificent manliness of it all. He relishes the chance to exercise his powers of description, as the Gas-man gets the worst of it. The Gas-man aimed "a mortal blow at his adversary's neck." But Neate "returned it with his left at full swing, planted a tremendous blow on his cheek-bone and eyebrow, and made a red ruin of that side of his face. The Gas-man went down&hellip; all one side of his face was perfect scarlet, and his right eye was closed in dingy blackness." The fight continues. And "to see two men smashed to the ground, smeared with gore, stunned, senseless, the breath beaten out of their bodies; and then, before you recover from the shock, to see them rise up with new strength and courage&hellip; — this is the high and heroic state of man!" But at last the Gas-man falls. "I never saw anything more terrific than his aspect just before he fell. All traces of life, of natural expression, were gone from him. His face was like a human skull, a death's head, spouting blood. The eyes were filled with blood, the nose streamed with blood, the mouth gaped blood. He was not like an actual man, but like a preternatural, spectral appearance, or like one of the figures in Dante's Inferno." Blood, blood, blood, blood, Dante. It is not this great English writer's finest hour. Sometimes one piece of work can repair, make up for, the damage done by another. And if there is a work that makes up for the frivolous sadism of The Fight, it's a picture by an anonymous English folk artist entitled West Bromwich SweeHazlitt's writing is fixated on the spectacle of violence. The picture imagines what it feels like. Its overall technique is pretty rough. Its evocation of pain is overwhelming. "WESTBROMWICH SWEEP As he appeared at george Holdens after his fight with fred higgit being waited on by Jem Parker through wose superior Generalship he won his Battle in 1 hour and 26 mineets on the 7 January 1850", reads the semi-literate caption. This is a detail, and if you look in the original at the pictures hanging on the wall of the pub, either side of the strangely beautiful candle-holder, you can see how the Fancy was normally portrayed: the man posed, ready before the fight, dukes up, showing his brisket. But here we see the aftermath, the tending of wounds. And it's in the depiction of the boxer's head that this image shocks, and exceeds all expectation. It's not the Sweep's heavy bruising and swelling as such that the picture stresses — it's his searing pain, extreme tenderness, sensory confusion and general pitifulness. His head is inflated, too big for his body (the other figures' heads are all in scale). Its sensations become larger than anyone else's in the room. It also becomes babylike, helpless. And the head-body joint is not properly articulated at the jaw. The head simply grows out of the neck, it is itself a swelling, a ballooning lump of flesh without self-control; helpless again. Or look at the features. There's the right eye, "closed in dingy darkness", formed like a black butterfly. The shape represents its contusion, but this symmetrical graphic sign also feels like it's stamped onto the face. The eye has been simply obliterated, turned into this blind and meaningless mark. And there's the left eye, bruised and blackened, and depicted as a negative shape, cut into the edge of the face like a slot. The bruising of the cheek is made of pure blackness that stains or corrodes into the side of the face from the edge. And the extreme tenderness of this cheek is conveyed by the extreme gentleness of the flannel that is dabbing against it. It only barely touches it. The bounding contours of cheek and flannel just meet, tangentially. The image winces at their point of contact. Most of all, there is the man's mouth. Its contusion curves it upwards into a pathetic involuntary smile (more pitiful helplessness). And as it curves up, the arc of the upper-lip becomes not quite readable. If you try to follow it along, you can't tell where this lip-line is meant to stop, or what path it takes. It could end smartly at the edge of the face. It could seamlessly curve into and become one with the contour of the blackened cheek (the swollen mouth losing all identity). Or it could curve back more sharply, becoming the edge of the pink area round the nose (making an especially fat lip). Now a viewer doesn't need to have these specific alternatives in mind. All you need register is that you can't grasp what the boxer's face is doing at this point — and nor can the boxer himself. The uncertainty of the image mimes his sensory disorientation, the thickening and blurring of the sensation in severely ruined flesh. This is picturing as empathy, the image fully inward with the agony it shows. There's nothing like it outside Picasso. Naïve art, or folk art, or vernacular art — increasingly polite words for the same thing — is usually anonymous. Some more modern artists, like Douanier Rousseau, Grandma Moses, Alfred Wallis and James Dixon, became famous by name. But the provincial amateurs who painted prize porkers and ships in full rigging during the 18th and 19th centuries largely remain among the great unknowns. The best collection of English Folk Art is at Compton Verney house in the heart of Warwickshire. Excerpted from English Graphic by Tom Lubbock All rights reserved by the original copyright owners. Excerpts are provided for display purposes only and may not be reproduced, reprinted or distributed without the written permission of the publisher.</p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="content">
+                    <table class="table">
+                      <thead>
+                        <th>Chapter</th>
+                        <th style="width: 64px;">Page</th>
+                      </thead>
+                      <tr>
+                        <td>Introduction</td>
+                        <td>6</td>
+                      </tr>
+                      <tr>
+                        <td>The Uffington White Horse</td>
+                        <td>16</td>
+                      </tr>
+                      <tr>
+                        <td>Hellmouth</td>
+                        <td>20</td>
+                      </tr>
+                      <tr>
+                        <td>Mappa Mundi</td>
+                        <td>24</td>
+                      </tr>
+                      <tr>
+                        <td>Two English Maps</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>The Bishop's Eye</td>
+                        <td>32</td>
+                      </tr>
+                      <tr>
+                        <td>Portrait of an Unknown Man Clasping a Hand from a Cloud</td>
+                        <td>36</td>
+                      </tr>
+                      <tr>
+                        <td>Leviathan</td>
+                        <td>40</td>
+                      </tr>
+                      <tr>
+                        <td>The Flea</td>
+                        <td>44</td>
+                      </tr>
+                      <tr>
+                        <td>Fantasy of Flight</td>
+                        <td>48</td>
+                      </tr>
+                      <tr>
+                        <td>Characters and Caricaturas</td>
+                        <td>52</td>
+                      </tr>
+                      <tr>
+                        <td>A Complete New System of Midwifery</td>
+                        <td>56</td>
+                      </tr>
+                      <tr>
+                        <td>Fuseli to Frankenstein</td>
+                        <td>60</td>
+                      </tr>
+                      <tr>
+                        <td>A Blot: Tigers</td>
+                        <td>68</td>
+                      </tr>
+                      <tr>
+                        <td>A Foregathering of Witches</td>
+                        <td>72</td>
+                      </tr>
+                      <tr>
+                        <td>Ambleside</td>
+                        <td>78</td>
+                      </tr>
+                      <tr>
+                        <td>The Source of the Arveiron</td>
+                        <td>82</td>
+                      </tr>
+                      <tr>
+                        <td>The British Slave Ship 'Brookes'</td>
+                        <td>86</td>
+                      </tr>
+                      <tr>
+                        <td>Mending a Face / Marring a Face</td>
+                        <td>90</td>
+                      </tr>
+                      <tr>
+                        <td>The Face of the Moon</td>
+                        <td>94</td>
+                      </tr>
+                      <tr>
+                        <td>The Gout</td>
+                        <td>98</td>
+                      </tr>
+                      <tr>
+                        <td>A Democrat</td>
+                        <td>102</td>
+                      </tr>
+                      <tr>
+                        <td>Electra and the Chorus</td>
+                        <td>106</td>
+                      </tr>
+                      <tr>
+                        <td>Blake Shapes</td>
+                        <td>110</td>
+                      </tr>
+                      <tr>
+                        <td>Jerusalem the Emanation of the Giant Albion</td>
+                        <td>118</td>
+                      </tr>
+                      <tr>
+                        <td>Albion Rose</td>
+                        <td>122</td>
+                      </tr>
+                      <tr>
+                        <td>Defining the Vignette</td>
+                        <td>126</td>
+                      </tr>
+                      <tr>
+                        <td>Vision and Landscape</td>
+                        <td>138</td>
+                      </tr>
+                      <tr>
+                        <td>In a Shoreham Garden</td>
+                        <td>144</td>
+                      </tr>
+                      <tr>
+                        <td>A Fantasy: The Fairy Ring</td>
+                        <td>148</td>
+                      </tr>
+                      <tr>
+                        <td>West Bromwich Sweep</td>
+                        <td>152</td>
+                      </tr>
+                      <tr>
+                        <td>Alice Overgrowing the Room</td>
+                        <td>156</td>
+                      </tr>
+                      <tr>
+                        <td>Portrait of Himself in Bed</td>
+                        <td>160</td>
+                      </tr>
+                      <tr>
+                        <td>Mr Aubrey Beardsley</td>
+                        <td>164</td>
+                      </tr>
+                      <tr>
+                        <td>Sower of the Systems</td>
+                        <td>168</td>
+                      </tr>
+                      <tr>
+                        <td>The New Word in Golf</td>
+                        <td>174</td>
+                      </tr>
+                      <tr>
+                        <td>The London Underground Map</td>
+                        <td>178</td>
+                      </tr>
+                      <tr>
+                        <td>Red Figures Carrying Babies and Visiting Graves</td>
+                        <td>182</td>
+                      </tr>
+                      <tr>
+                        <td>Fragments 6/9</td>
+                        <td>186</td>
+                      </tr>
+                      <tr>
+                        <td>The Hermit</td>
+                        <td>190</td>
+                      </tr>
+                      <tr>
+                        <td>For the 5 Vowels</td>
+                        <td>194</td>
+                      </tr>
+                      <tr>
+                        <td>Index</td>
+                        <td>201</td>
+                      </tr>
+                      <tr>
+                        <td>Editor's Note</td>
+                        <td>205</td>
+                      </tr>
+                      <tr>
+                        <td>Acknowledgements</td>
+                        <td>207</td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
-
-<div role="tabpanel">
-
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-<!--    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>-->
-    <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Summary</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Review</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Excerpts</a></li>
-    <li role="presentation"><a href="#content" aria-controls="content" role="tab" data-toggle="tab">Table of Content</a></li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-<!--    <div role="tabpanel" class="tab-pane active" id="home">...</div>-->
-    <div role="tabpanel" class="tab-pane active" id="profile">
-      <h4>Summary</h4>
-      <p><span class="italic">English Graphic</span> is a book of essays on the subject of illustration, with the focus entirely on English artists using graphic media; drawings, prints and watercolours. The pieces are largely drawn from Tom Lubbock's weekly <span class="italic">Great Works column</span> for the <span class="italic">Independent</span>, with some longer pieces originally published as reviews or catalogue essays. The historical span of the book is broad #150; from the <span class="italic">Uffington White Horse</span> to the <span class="italic">Winchester Psalter Hellmouth</span> to <span class="italic">Harry Beck's London Underground Map</span> and beyond. The high point of English Graphic art in the late eighteenth and early nineteenth century makes up the heart of the book, with Fuseli, Blake, Bewick and Palmer all the subject of extended essays. The fifty or so images range from the visionary to the empirical, from folk art to caricature. Connecting and overlapping ideas on line and shape run through the book; maps, islands, clouds, swarms, wombs, skins, dots, contours and boundaries. Energetic, coherent and strange, English Graphic presents an electrical storm of ideas and illuminations provocatively argued by one of our most brilliant writers on art.</p>
-      <h4>Author Notes</h4>
-      <p>TOM LUBBOCK, critic and illustrator, was the chief art critic of the <span class="italic">Independent</span> from 1997 until his death in 2011. He is the author of <span class="italic">Great Works</span> and <span class="italic">Until Further Notice, I Am Alive</span>. As well as major catalogue essays on <span class="italic">Goya</span>, <span class="italic">Thomas Bewick</span> and <span class="italic">Ian Hamilton Finlay</span>. His illustrations, mainly done in collage, appeared every Saturday on the editorial page of the Independent between 1999 and 2004. His weekly <span class="italic">Great Works column</span>, from which some of these essays are taken, ran between 2005 and 2010. JAMIE McKENDRICK is the author of five collections of poetry including <span class="italic">The Marble Fly (1997)</span>, winner of the <span class="italic">Forward Poetry Prize; Ink Stone (2003)</span>, which was shortlisted for the <span class="italic">2003 T. S. Eliot Prize</span> and the <span class="italic">2003 Whitbread Poetry Award</span>; and <span class="italic">Crocodiles &amp; Obelisks (2007)</span>, shortlisted for the <span class="italic">Forward Prize</span>. He is editor of <span class="italic">20th-Century Italian Poems (2004)</span> and his translations of the poetry of <span class="italic">Valerio Magrelli, The Embrace (2009)</span>, was awarded the <span class="italic">Weidenfeld Translation</span> prize for 2010.</p>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="messages">
-      <h4>Choice Review</h4>
-      <p>What links Leviathan and a flea, Albion Rose and Lincoln Cathedral rose, Rowlandson's "Marring a Face" and the face of the moon, "In a Shoreham Garden" and the slave trade? They all prompted Lubbock to write brief, evocative, literate meditations on a wide variety of English "graphics," including maps, diagrams, watercolors, portrait miniatures, manuscript illumination, cartoons, and even a Bronze Age earth "drawing," the Uffington White Horse. Lubbock, chief art critic of the Independent from 1997 until his death in 2011, has written a book of essays on the subject of illustration and drawing. The images discussed range from the empirical to the visionary and from fine art to folk art, caricature, and cartoons. Lubbock writes insightful mini-essays that reflect a fine eye, literate sensibility, and voracious curiosity. He is particularly interested in the relations between writing and drawing, and between thought and illustration. He invokes literature, poetry, philosophy, and science to explore a wide range of fascinating imagery. But does the intended audience consist of artists, writers and critics, and students of graphic arts and illustration, or general readers of beautifully produced, intelligent, and easy-to-read books? Probably all of the above. Summing Up: Recommended. Lower- and upper-level undergraduates, professionals/practitioners, and general readers. W. E. Wallace Washington University</p>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="settings">
-      <p>West Bromwich Sweep There's nothing to beat seeing a man being beaten to a pulBefore boxing-gloves were introduced by the Queensbury Rules of 1867, bare-knuckle fighting could cause extreme facial damage. And it is clear from images and written accounts that the mess was part of the fun. For instance, there's Thomas Rowlandson's Six Stages of Marring a Face (1792) - a cartoon-strip, depicting step-by-step the wreckage of a boxer's features. No opponent is shown. All attention is on the spectacle of progressive and bloody rearrangement. William Hazlitt wrote a horrible little essay called The Fight (1822), in which he describes how he and other lovers of "The FANCY" take an excursion out of London to watch a big match between William Neate and The Gas-man (as he's nick-named). Hazlitt coos and twitters at the prospect, and then at the sight, of two fellows smashing each other to bits. He tosses in literary quotations and classical allusions. He thrills self-consciously at the crudely violent but yet magnificent manliness of it all. He relishes the chance to exercise his powers of description, as the Gas-man gets the worst of it. The Gas-man aimed "a mortal blow at his adversary's neck." But Neate "returned it with his left at full swing, planted a tremendous blow on his cheek-bone and eyebrow, and made a red ruin of that side of his face. The Gas-man went down... all one side of his face was perfect scarlet, and his right eye was closed in dingy blackness." The fight continues. And "to see two men smashed to the ground, smeared with gore, stunned, senseless, the breath beaten out of their bodies; and then, before you recover from the shock, to see them rise up with new strength and courage... - this is the high and heroic state of man!" But at last the Gas-man falls. "I never saw anything more terrific than his aspect just before he fell. All traces of life, of natural expression, were gone from him. His face was like a human skull, a death's head, spouting blood. The eyes were filled with blood, the nose streamed with blood, the mouth gaped blood. He was not like an actual man, but like a preternatural, spectral appearance, or like one of the figures in Dante's Inferno." Blood, blood, blood, blood, Dante. It is not this great English writer's finest hour. Sometimes one piece of work can repair, make up for, the damage done by another. And if there is a work that makes up for the frivolous sadism of The Fight, it's a picture by an anonymous English folk artist entitled West Bromwich SweeHazlitt's writing is fixated on the spectacle of violence. The picture imagines what it feels like. Its overall technique is pretty rough. Its evocation of pain is overwhelming. "WESTBROMWICH SWEEP As he appeared at george Holdens after his fight with fred higgit being waited on by Jem Parker through wose superior Generalship he won his Battle in 1 hour and 26 mineets on the 7 January 1850", reads the semi-literate caption. This is a detail, and if you look in the original at the pictures hanging on the wall of the pub, either side of the strangely beautiful candle-holder, you can see how the Fancy was normally portrayed: the man posed, ready before the fight, dukes up, showing his brisket. But here we see the aftermath, the tending of wounds. And it's in the depiction of the boxer's head that this image shocks, and exceeds all expectation. It's not the Sweep's heavy bruising and swelling as such that the picture stresses - it's his searing pain, extreme tenderness, sensory confusion and general pitifulness. His head is inflated, too big for his body (the other figures' heads are all in scale). Its sensations become larger than anyone else's in the room. It also becomes babylike, helpless. And the head-body joint is not properly articulated at the jaw. The head simply grows out of the neck, it is itself a swelling, a ballooning lump of flesh without self-control; helpless again. Or look at the features. There's the right eye, "closed in dingy darkness", formed like a black butterfly. The shape represents its contusion, but this symmetrical graphic sign also feels like it's stamped onto the face. The eye has been simply obliterated, turned into this blind and meaningless mark. And there's the left eye, bruised and blackened, and depicted as a negative shape, cut into the edge of the face like a slot. The bruising of the cheek is made of pure blackness that stains or corrodes into the side of the face from the edge. And the extreme tenderness of this cheek is conveyed by the extreme gentleness of the flannel that is dabbing against it. It only barely touches it. The bounding contours of cheek and flannel just meet, tangentially. The image winces at their point of contact. Most of all, there is the man's mouth. Its contusion curves it upwards into a pathetic involuntary smile (more pitiful helplessness). And as it curves up, the arc of the upper-lip becomes not quite readable. If you try to follow it along, you can't tell where this lip-line is meant to stop, or what path it takes. It could end smartly at the edge of the face. It could seamlessly curve into and become one with the contour of the blackened cheek (the swollen mouth losing all identity). Or it could curve back more sharply, becoming the edge of the pink area round the nose (making an especially fat lip). Now a viewer doesn't need to have these specific alternatives in mind. All you need register is that you can't grasp what the boxer's face is doing at this point - and nor can the boxer himself. The uncertainty of the image mimes his sensory disorientation, the thickening and blurring of the sensation in severely ruined flesh. This is picturing as empathy, the image fully inward with the agony it shows. There's nothing like it outside Picasso. Naïve art, or folk art, or vernacular art - increasingly polite words for the same thing - is usually anonymous. Some more modern artists, like Douanier Rousseau, Grandma Moses, Alfred Wallis and James Dixon, became famous by name. But the provincial amateurs who painted prize porkers and ships in full rigging during the 18th and 19th centuries largely remain among the great unknowns. The best collection of English Folk Art is at Compton Verney house in the heart of Warwickshire. Excerpted from English Graphic by Tom Lubbock All rights reserved by the original copyright owners. Excerpts are provided for display purposes only and may not be reproduced, reprinted or distributed without the written permission of the publisher.</p>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="content">
-      <table class="table">
-        <thead>
-          <th>Chapter</th>
-          <th style="width: 64px;">Page</th>
-        </thead>
-        <tr>
-          <td>Introduction</td>
-          <td>6</td>
-        </tr>
-        <tr>
-          <td>The Uffington White Horse</td>
-          <td>16</td>
-        </tr>
-        <tr>
-          <td>Hellmouth</td>
-          <td>20</td>
-        </tr>
-        <tr>
-          <td>Mappa Mundi</td>
-          <td>24</td>
-        </tr>
-        <tr>
-          <td>Two English Maps</td>
-          <td>28</td>
-        </tr>
-        <tr>
-          <td>The Bishop's Eye</td>
-          <td>32</td>
-        </tr>
-        <tr>
-          <td>Portrait of an Unknown Man Clasping a Hand from a Cloud</td>
-          <td>36</td>
-        </tr>
-        <tr>
-          <td>Leviathan</td>
-          <td>40</td>
-        </tr>
-        <tr>
-          <td>The Flea</td>
-          <td>44</td>
-        </tr>
-        <tr>
-          <td>Fantasy of Flight</td>
-          <td>48</td>
-        </tr>
-        <tr>
-          <td>Characters and Caricaturas</td>
-          <td>52</td>
-        </tr>
-        <tr>
-          <td>A Complete New System of Midwifery</td>
-          <td>56</td>
-        </tr>
-        <tr>
-          <td>Fuseli to Frankenstein</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td>A Blot: Tigers</td>
-          <td>68</td>
-        </tr>
-        <tr>
-          <td>A Foregathering of Witches</td>
-          <td>72</td>
-        </tr>
-        <tr>
-          <td>Ambleside</td>
-          <td>78</td>
-        </tr>
-        <tr>
-          <td>The Source of the Arveiron</td>
-          <td>82</td>
-        </tr>
-        <tr>
-          <td>The British Slave Ship 'Brookes'</td>
-          <td>86</td>
-        </tr>
-        <tr>
-          <td>Mending a Face / Marring a Face</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>The Face of the Moon</td>
-          <td>94</td>
-        </tr>
-        <tr>
-          <td>The Gout</td>
-          <td>98</td>
-        </tr>
-        <tr>
-          <td>A Democrat</td>
-          <td>102</td>
-        </tr>
-        <tr>
-          <td>Electra and the Chorus</td>
-          <td>106</td>
-        </tr>
-        <tr>
-          <td>Blake Shapes</td>
-          <td>110</td>
-        </tr>
-        <tr>
-          <td>Jerusalem the Emanation of the Giant Albion</td>
-          <td>118</td>
-        </tr>
-        <tr>
-          <td>Albion Rose</td>
-          <td>122</td>
-        </tr>
-        <tr>
-          <td>Defining the Vignette</td>
-          <td>126</td>
-        </tr>
-        <tr>
-          <td>Vision and Landscape</td>
-          <td>138</td>
-        </tr>
-        <tr>
-          <td>In a Shoreham Garden</td>
-          <td>144</td>
-        </tr>
-        <tr>
-          <td>A Fantasy: The Fairy Ring</td>
-          <td>148</td>
-        </tr>
-        <tr>
-          <td>West Bromwich Sweep</td>
-          <td>152</td>
-        </tr>
-        <tr>
-          <td>Alice Overgrowing the Room</td>
-          <td>156</td>
-        </tr>
-        <tr>
-          <td>Portrait of Himself in Bed</td>
-          <td>160</td>
-        </tr>
-        <tr>
-          <td>Mr Aubrey Beardsley</td>
-          <td>164</td>
-        </tr>
-        <tr>
-          <td>Sower of the Systems</td>
-          <td>168</td>
-        </tr>
-        <tr>
-          <td>The New Word in Golf</td>
-          <td>174</td>
-        </tr>
-        <tr>
-          <td>The London Underground Map</td>
-          <td>178</td>
-        </tr>
-        <tr>
-          <td>Red Figures Carrying Babies and Visiting Graves</td>
-          <td>182</td>
-        </tr>
-        <tr>
-          <td>Fragments 6/9</td>
-          <td>186</td>
-        </tr>
-        <tr>
-          <td>The Hermit</td>
-          <td>190</td>
-        </tr>
-        <tr>
-          <td>For the 5 Vowels</td>
-          <td>194</td>
-        </tr>
-        <tr>
-          <td>Index</td>
-          <td>201</td>
-        </tr>
-        <tr>
-          <td>Editor's Note</td>
-          <td>205</td>
-        </tr>
-        <tr>
-          <td>Acknowledgements</td>
-          <td>207</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-</div>
-                
-                
-                
-                
-
               </div>
             </div>
-          </div>
-        </div>
-          
-          
+
+        </div>          
         </div>
       </div>
     </div>
+    <footer class="pageFooter" id="pageFooter">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Maryland Institute College of Art &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </div>
+    </footer>
 
 
     <!-- Bootstrap core JavaScript
