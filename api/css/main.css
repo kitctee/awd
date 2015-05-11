@@ -1,0 +1,242 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+main, header, section, footer, aside, nav, article, figure {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+main, header, section, footer, aside, nav, article, figure { display: block; }
+html { -webkit-text-size-adjust: 100%; }
+a {
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+}
+li {list-style-type: none;}
+img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+-moz-::selection {
+  color: #55acff;
+  background: #292f33;
+  text-shadow: none;
+}
+::selection {
+  color: #55acff;
+  background: #292f33;
+  text-shadow: none;
+}
+
+/*
+color: #55acff;
+color: #292f33;
+color: #66757f;
+color: #8899a6;
+color: #ccd6dd;
+color: #e1e8ed;
+color: #f5f8fa;
+*/
+
+/* =============================================================================
+   H1 - H6
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6, div, span, li, p {
+  color: hsl(42, 5%, 20%);
+}
+h1 {
+  clear: both;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 1.25;
+}
+h2 {
+  font-size: 1.375rem;
+  line-height: 1.3125;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.15rem;
+  line-height: 1.3125;
+  font-weight: bold;
+}
+h4 {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+h5 {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+h5 time {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+h6 {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  hanging-punctuation: allow-end;
+}
+h4, h5, h6, time {
+  font-family: "PT Sans Caption", "PT Sans", "helvetica", "文泉驛正黑", "WenQuanYi Zen Hei", "華文黑體", "STHeiti", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;;
+}
+h5.caption i.fa-clock-o,
+.mainFooter i.fa-twitter {
+  margin-right: 0.5em;
+}
+
+/* =============================================================================
+   BODY & LARGE CONTAINER
+   ========================================================================== */
+
+body {
+  font-family: 'Montserrat', "PT Sans", "helvetica", "文泉驛正黑", "WenQuanYi Zen Hei", "華文黑體", "STHeiti", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
+  background-color: #292f33;
+  color: white;
+}
+.bodyContainer {
+  position: relative;
+  overflow: hidden;
+  padding: 84px 0;
+}
+.maxWrapper {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 1rem;
+  margin: auto;
+  position: relative;
+  overflow: visible;
+}
+h1.headline {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  margin: 50px 0 100px;
+}
+
+.mediaCon {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+}
+.media {
+  position: relative;
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  margin: 40px 0;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.media .imgBox a {
+  display: block;
+  overflow: hidden;
+}
+.imgBox,
+.textBox {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.media .imgBox {
+  width: 40px;
+  min-width: 40px;
+}
+.media .imgBox img {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+}
+.media .textBox {
+  padding-left: 15px;
+}
+.mediaCon .mediaWrap {
+  padding: 15px 20px;
+  border-top: 1px solid #ccd6dd;
+  background-color: #e1e8ed;
+}
+
+.media h1 {
+  padding: 5% 14% 5% 7%;
+}
+.media h5 {
+  color: #66757f;
+}
+h1 i.fa {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  bottom: 0;
+  margin-top: -62px;
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  color: #ccd6dd;
+}
+h1 i.fa:hover {
+  color: #8899a6;
+}
+.mainFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #55acff;
+  text-align: center;
+  border-top: 1px solid #292f33;
+}
+.mainFooter p {
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 50px;
+  color: #fff;
+}
+.mainFooter p i {
+  color: #fff;
+}
+
+/* =============================================================================
+   STUFF FOR MOBILE
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .maxWrapper {
+    min-width: 100%;
+    padding: 0 1.5rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 568px) {
+  html { font-size: 14px; }
+}
